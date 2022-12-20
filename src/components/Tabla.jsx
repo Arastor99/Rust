@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import image from "../bg.jpg";
+import Navbar from "./Navbar";
 
 export const Tabla = () => {
 
@@ -72,7 +73,8 @@ export const Tabla = () => {
     }
   return (
    <>
-   <div  style={{ backgroundImage:`url(${image})`, height:'100vh', backgroundSize: 'cover'}} >
+   <div  style={{ backgroundImage:`url(${image})`, height:'100vh', backgroundSize: 'cover'}}>
+    <Navbar/>
    <div className="opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300" >
         <h1 className="text-4xl font-medium">Rust Decay Calculator</h1>
         <p className="text-slate-500">Elije los materiales para calcular el tiempo restante</p>
@@ -92,7 +94,7 @@ export const Tabla = () => {
                     <p className="font-medium text-slate-700 pb-2">Vida de la estructura</p>
                     <input className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" type="number" ref={vida} />
                 </label>
-               
+               <div id="tiempo"></div>
                 <button className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center" onClick={handleTiempo}>
                       
                       <span>Calcular</span>
