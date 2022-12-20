@@ -1,20 +1,14 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import image from "../bg.jpg";
 import Navbar from "./Navbar";
+import { decimal2HHMISS } from "../functions/decimalToDate";
 
 export const Tabla = () => {
 
-    const lista = []
     const material = useRef();
-    const estructura = useRef();
     const vida = useRef();
+    let [caida, setCaida] = useState();
 
-
-    let decimal2HHMISS = function (decimal) {
-        let n = new Date(0, 0);
-        n.setSeconds(decimal * 60 * 60);
-        return n.toTimeString().slice(0, 8);
-    };
 
     const handleTiempo = () => {
         /*
@@ -30,7 +24,6 @@ export const Tabla = () => {
         const vidaRestante = vida.current.value;
         let tiempo = 0;
         let vidaTotal = 0;
-        let caida = 0;
         switch (resource) {
             case 'wood':
                 tiempo = 3;
@@ -94,7 +87,7 @@ export const Tabla = () => {
                     <p className="font-medium text-slate-700 pb-2">Vida de la estructura</p>
                     <input className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" type="number" ref={vida} />
                 </label>
-               <div id="tiempo"></div>
+               <div id="tiempo">{caida}</div>
                 <button className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center" onClick={handleTiempo}>
                       
                       <span>Calcular</span>
