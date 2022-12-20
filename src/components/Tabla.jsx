@@ -1,4 +1,5 @@
-import { useRef } from "react"
+import { useRef } from "react";
+import image from "../bg.jpg";
 
 export const Tabla = () => {
 
@@ -71,7 +72,8 @@ export const Tabla = () => {
     }
   return (
    <>
-   <div className="max-w-lg mx-auto my-10 bg-white p-8 rounded-xl shadow shadow-slate-300">
+   <div  style={{ backgroundImage:`url(${image})`, height:'100vh', backgroundSize: 'cover'}} >
+   <div className="opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300" >
         <h1 className="text-4xl font-medium">Rust Decay Calculator</h1>
         <p className="text-slate-500">Elije los materiales para calcular el tiempo restante</p>
 
@@ -98,6 +100,7 @@ export const Tabla = () => {
                 
             </div>
             <span>Considere que el tiempo de decay ve desde fuera hacia dentro, es decir cuanto mas lejos este del TC (armario) menos tiempo tardara en caer, asi que es un tiempo aproximado</span>
+    </div>
     </div>
    </>
   )
