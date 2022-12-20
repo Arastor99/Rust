@@ -29,32 +29,28 @@ export const Tabla = () => {
                 tiempo = 3;
                 vidaTotal = 250;
                 caida = (vidaRestante * tiempo) / vidaTotal;
-                console.log(decimal2HHMISS(caida));
+                setCaida(decimal2HHMISS(caida));
                 break;
 
             case 'stone':
                 tiempo = 5;
                 vidaTotal = 500;
                 caida = (vidaRestante * tiempo) / vidaTotal;
-                console.log(decimal2HHMISS(caida));
-
-
+                setCaida(decimal2HHMISS(caida));
                 break;
 
             case 'metal':
                 tiempo = 8;
                 vidaTotal = 1000;
                 caida = (vidaRestante * tiempo) / vidaTotal;
-                console.log(decimal2HHMISS(caida));
-
+                setCaida(decimal2HHMISS(caida));
                 break;
 
             case 'hq':
                 tiempo = 12;
                 vidaTotal = 2000;
                 caida = (vidaRestante * tiempo) / vidaTotal;
-                console.log(caida);
-
+                setCaida(decimal2HHMISS(caida));
                 break;
         
             default:
