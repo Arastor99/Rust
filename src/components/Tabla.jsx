@@ -1,123 +1,178 @@
 import { useRef, useState } from "react";
 import image from "../bg.jpg";
 import Navbar from "./Navbar";
+
 import { decimal2HHMISS } from "../functions/decimalToDate";
+import Select from "./Select";
 
 export const Tabla = () => {
-
-    const material = useRef();
-    const vida = useRef();
-    const [caida, setCaida] = useState();
-
-
-    const handleTiempo = () => {
-        /*
-        console.log(estructura.current.value);
-        hp de paredes foundation y techos:
-        madera: 250hp decay 3h
-        piedra: 500hp decay 5h
-        metal: 1000hp decay 8h
-        hq: 2000hp decay 12h
-        */
-
-        const resource = material.current.value;
-        const vidaRestante = vida.current.value;
-        let tiempo = 0;
-        let vidaTotal = 0;
-        switch (resource) {
-            case 'wood':
-                tiempo = 3;
-                vidaTotal = 250;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'stone':
-                tiempo = 5;
-                vidaTotal = 500;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'metal':
-                tiempo = 8;
-                vidaTotal = 1000;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'hq':
-                tiempo = 12;
-                vidaTotal = 2000;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'dw':
-                tiempo = 3;
-                vidaTotal = 200;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'dm':
-                tiempo = 8;
-                vidaTotal = 250;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'dg':
-                tiempo = 8;
-                vidaTotal = 600;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-
-            case 'dq':
-                tiempo = 12;
-                vidaTotal = 1000;
-                setCaida(decimal2HHMISS((vidaRestante * tiempo) / vidaTotal));
-                break;
-            default:
-                break;
-        }
+  const vida = useRef();
+  const material = [
+    {
+      id: 1,
+      name: "Madera",
+      value: 'wood',
+      img: <img className="h-8 w-8" src="./src/assets/resources/wood.png" />,
+    },
+    {
+      id: 2,
+      name: "Piedra",
+      value: 'stone',
+      img: <img className="h-8 w-8" src="./src/assets/resources/stone.png" />,
+    },
+    {
+      id: 3,
+      name: "Metal",
+      value: 'metal',
+      img: <img className="h-8 w-8" src="./src/assets/resources/metal.png" />,
+    },
+    {
+      id: 4,
+      name: "Metal de alta calidad",
+      value: 'hq',
+      img: <img className="h-8 w-8" src="./src/assets/resources/hq.png" />,
+    },
+    {
+      id: 5,
+      name: "Puerta de madera",
+      value: 'dw',
+      img: <img className="h-8 w-8" src="./src/assets/resources/dw.png" />,
+    },
+    {
+      id: 6,
+      name: "Puerta de metal",
+      value: 'dm',
+      img: <img className="h-8 w-8" src="./src/assets/resources/dm.png" />,
+    },
+    {
+      id: 7,
+      name: "Puerta de garaje",
+      value: 'dg',
+      img: <img className="h-8 w-8" src="./src/assets/resources/dg.png" />,
+    },
+    {
+      id: 8,
+      name: "Puera armored",
+      value: 'dq',
+      img: <img className="h-8 w-8" src="./src/assets/resources/dq.png" />,
+    },
+  ];
+  const [selected, setSelected] = useState(material[0]);
+  const [tiempo, setTiempo] = useState();
 
 
+  const handleTiempo = () => {
 
+    const resource = selected.value;
+    const vidaRestante = vida.current.value;
+    let time = 0;
+    let vidaTotal = 0;
+
+    switch (resource) {
+      case "wood":
+
+        vidaTotal = 250;
+        setTiempo(decimal2HHMISS((vidaRestante * 3) / vidaTotal));
+        console.log(tiempo);
+        break;
+
+      case "stone":
+
+        vidaTotal = 500;
+        setTiempo(decimal2HHMISS((vidaRestante * 5) / vidaTotal));
+        break;
+
+      case "metal":
+
+        vidaTotal = 1000;
+        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        break;
+
+      case "hq":
+
+        vidaTotal = 2000;
+        setTiempo(decimal2HHMISS((vidaRestante * 12) / vidaTotal));
+        break;
+
+      case "dw":
+
+        vidaTotal = 200;
+        setTiempo(decimal2HHMISS((vidaRestante * 3) / vidaTotal));
+        break;
+
+      case "dm":
+
+        vidaTotal = 250;
+        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        break;
+
+      case "dg":
+
+        vidaTotal = 600;
+        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        break;
+
+      case "dq":
+
+        vidaTotal = 1000;
+        setTiempo(decimal2HHMISS((vidaRestante * 12) / vidaTotal));
+        break;
+      default:
+        break;
     }
-    return (
-        <>
-            <div style={{ backgroundImage: `url(${image})`, height: '100vh', backgroundSize: 'cover' }}>
-                <Navbar />
-                <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300" >
-                    <h1 className="text-4xl font-medium font-face-r text-center ">Rust Decay Calculator</h1>
-                    <p className="text-slate-500">Elije los materiales para calcular el tiempo restante</p>
+  };
 
-                    <div className="flex flex-col space-y-5">
-                        <label htmlFor="material">
-                            <p className="font-medium text-slate-700 pb-2">Tipo de material</p>
-                            <select ref={material} id="material" name="material" type="material" className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" placeholder="Enter email address">
-                                <option value="wood">Madera</option>
-                                <option value="stone">Piedra</option>
-                                <option value="metal">Metal</option>
-                                <option value="hq">Metal de alta calidad</option>
-                                <option value="dw">Puerta de madera</option>
-                                <option value="dm">Puerta de metal</option>
-                                <option value="dg">puerta de garaje</option>
-                                <option value="dq">puerta armored</option>
+  return (
+    <>
+      <div
+        style={{
+          backgroundImage: `url(${image})`,
+          height: "100vh",
+          backgroundSize: "cover",
+        }}
+      >
+        <Navbar />
 
-                            </select>
-                        </label>
-                        <label htmlFor="estructura">
-                            <p className="font-medium text-slate-700 pb-2">Vida de la estructura</p>
-                            <input className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow" type="number" ref={vida} />
-                        </label>
-                        <div id="tiempo">{caida}</div>
-                        <button className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center" onClick={handleTiempo}>
+        <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
+          <h1 className="text-4xl font-medium font-face-r text-center ">
+            Rust Decay Calculator
+          </h1>
+          <p className="text-slate-500">
+            Elije los materiales para calcular el tiempo restante
+          </p>
 
-                            <span className="text-xl">Calcular</span>
-                        </button>
-
-                    </div>
-                    <span>Considere que el tiempo de decay ve desde fuera hacia dentro, es decir cuanto mas lejos este del TC (armario) menos tiempo tardara en caer, asi que es un tiempo aproximado</span>
-                </div>
-            </div>
-        </>
-    )
-}
-
-
+          <div className="flex flex-col space-y-5">
+            <label htmlFor="material">
+              <p className="font-medium text-slate-700 pb-2">
+                Tipo de material
+              </p>
+              <Select selected={selected} setSelected={setSelected} material={material}/>
+            </label>
+            <label htmlFor="estructura">
+              <p className="font-medium text-slate-700 pb-2">
+                Vida de la estructura
+              </p>
+              <input
+                className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                type="number"
+                ref={vida}
+              />
+            </label>
+            <div id="tiempo">{tiempo}</div>
+            <button
+              className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center"
+              onClick={handleTiempo}
+            >
+              <span className="text-xl">Calcular</span>
+            </button>
+          </div>
+          <span>
+            Considere que el tiempo de decay ve desde fuera hacia dentro, es
+            decir cuanto mas lejos este del TC (armario) menos tiempo tardara en
+            caer, asi que es un tiempo aproximado
+          </span>
+        </div>
+      </div>
+    </>
+  );
+};
