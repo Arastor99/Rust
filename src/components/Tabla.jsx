@@ -83,7 +83,7 @@ export const Tabla = () => {
         <>
             <div style={{ backgroundImage: `url(${image})`, height: '100vh', backgroundSize: 'cover' }}>
                 <Navbar />
-                <div className="opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300" >
+                <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300" >
                     <h1 className="text-4xl font-medium font-face-r text-center ">Rust Decay Calculator</h1>
                     <p className="text-slate-500">Elije los materiales para calcular el tiempo restante</p>
 
@@ -109,7 +109,7 @@ export const Tabla = () => {
                         <div id="tiempo">{caida}</div>
                         <button className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center" onClick={handleTiempo}>
 
-                            <span>Calcular</span>
+                            <span className="text-xl">Calcular</span>
                         </button>
 
                     </div>

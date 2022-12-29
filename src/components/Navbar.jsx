@@ -2,7 +2,7 @@
 const Navbar = () => {
   return (
     <>
-    <div className="box-border h-48 w-full p-4 border-4"></div>
+    <div className="h-52 w-full p-4 bg-[url('/src/assets/resources/banner.png')] bg-cover"></div>
     </>
   )
 }
