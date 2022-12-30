@@ -6,7 +6,7 @@ import Select from "./Select";
 
 
 //images
-import image from "../bg.jpg";
+import image from "../../public/static/resources/bg.jpg";
 import wood from "/public/static/resources/wood.png";
 import stone from "/public/static/resources/stone.png";
 import metal from "/public/static/resources/metal.png";
