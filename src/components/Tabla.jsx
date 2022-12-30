@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import image from "../bg.jpg";
 import Navbar from "./Navbar";
 
+import wood from '/public/static/resources/wood.png';
+
 import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
 
@@ -12,7 +14,7 @@ export const Tabla = () => {
       id: 1,
       name: "Madera",
       value: 'wood',
-      img: <img className="h-8 w-8" src="/public/static/resources/wood.png" />,
+      img: <img className="h-8 w-8" src={wood} />,
     },
     {
       id: 2,
