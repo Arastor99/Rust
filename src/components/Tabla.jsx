@@ -164,7 +164,7 @@ export const Tabla = () => {
                 Vida de la estructura
               </p>
               <input
-                className="w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                className="font-sans w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
                 type="number"
                 ref={vida}
               />
@@ -177,7 +177,7 @@ export const Tabla = () => {
               <span className="text-xl">Calcular</span>
             </button>
           </div>
-          <span>
+          <span className="font-sans">
             Considere que el tiempo de decay ve desde fuera hacia dentro, es
             decir cuanto mas lejos este del TC (armario) menos tiempo tardara en
             caer, asi que es un tiempo aproximado
