@@ -1,11 +1,20 @@
 import { useRef, useState } from "react";
-import image from "../bg.jpg";
 import Navbar from "./Navbar";
-
-import wood from '/public/static/resources/wood.png';
-
 import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
+
+//images
+import image from "../bg.jpg";
+import wood from '/public/static/resources/wood.png';
+import stone from '/public/static/resources/stone.png';
+import metal from '/public/static/resources/metal.png';
+import hq from '/public/static/resources/hq.png';
+import dw from '/public/static/resources/dw.png';
+import dm from '/public/static/resources/dm.png';
+import dg from '/public/static/resources/dg.png';
+import dq from '/public/static/resources/dq.png';
+
+
 
 export const Tabla = () => {
   const vida = useRef();
@@ -20,43 +29,43 @@ export const Tabla = () => {
       id: 2,
       name: "Piedra",
       value: 'stone',
-      img: <img className="h-8 w-8" src="/public/static/resources/stone.png" />,
+      img: <img className="h-8 w-8" src={stone} />,
     },
     {
       id: 3,
       name: "Metal",
       value: 'metal',
-      img: <img className="h-8 w-8" src="/public/static/resources/metal.png" />,
+      img: <img className="h-8 w-8" src={metal} />,
     },
     {
       id: 4,
       name: "Metal de alta calidad",
       value: 'hq',
-      img: <img className="h-8 w-8" src="/public/static/resources/hq.png" />,
+      img: <img className="h-8 w-8" src={hq} />,
     },
     {
       id: 5,
       name: "Puerta de madera",
       value: 'dw',
-      img: <img className="h-8 w-8" src="/public/static/resources/dw.png" />,
+      img: <img className="h-8 w-8" src={dw} />,
     },
     {
       id: 6,
       name: "Puerta de metal",
       value: 'dm',
-      img: <img className="h-8 w-8" src="/public/static/resources/dm.png" />,
+      img: <img className="h-8 w-8" src={dm} />,
     },
     {
       id: 7,
       name: "Puerta de garaje",
       value: 'dg',
-      img: <img className="h-8 w-8" src="/public/static/resources/dg.png" />,
+      img: <img className="h-8 w-8" src={dg} />,
     },
     {
       id: 8,
       name: "Puera armored",
       value: 'dq',
-      img: <img className="h-8 w-8" src="/public/static/resources/dq.png" />,
+      img: <img className="h-8 w-8" src={dq} />,
     },
   ];
   const [selected, setSelected] = useState(material[0]);
