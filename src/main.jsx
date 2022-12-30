@@ -10,6 +10,6 @@ ReactGA.initialize(import.meta.env.VITE_TRACKINGID);
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
     <Tabla/>
-    <Analytics />
+    <Analytics mode={'production'} />
     </>
 )
