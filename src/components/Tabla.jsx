@@ -169,7 +169,7 @@ export const Tabla = () => {
                 ref={vida}
               />
             </label>
-            <div id="tiempo">{tiempo}</div>
+            <div className="font-sans font-bold text-xl w-full text-center" id="tiempo">{tiempo}</div>
             <button
               className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center"
               onClick={handleTiempo}

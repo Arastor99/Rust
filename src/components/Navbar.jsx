@@ -2,7 +2,7 @@
 const Navbar = () => {
   return (
     <>
-    <div className="h-52 w-full p-4 bg-[url('/public/static/resources/banner.jpg')] bg-cover"></div>
+    <div className="w-full h-52 bg-[url('/public/static/resources/banner.jpg')] bg-contain bg-no-repeat"></div>
     </>
   )
 }
