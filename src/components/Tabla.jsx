@@ -2,8 +2,7 @@ import { useRef, useState } from "react";
 import Navbar from "./Navbar";
 import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
-
-
+import { useTranslation } from "react-i18next";
 
 //images
 import image from "../../public/static/resources/bg.jpg";
@@ -15,61 +14,81 @@ import dw from "/public/static/resources/dw.png";
 import dm from "/public/static/resources/dm.png";
 import dg from "/public/static/resources/dg.png";
 import dq from "/public/static/resources/dq.png";
+import en from "/public/static/resources/uk.png";
+import es from "/public/static/resources/spain.png";
+import LanguageSelect from "./LanguageSelect";
 
 export const Tabla = () => {
+  const { t, i18n } = useTranslation();
   const vida = useRef();
   const material = [
     {
       id: 1,
-      name: "Madera",
+      name: t("materials.wood"),
       value: "wood",
       img: <img className="h-8 w-8" src={wood} />,
     },
     {
       id: 2,
-      name: "Piedra",
+      name: t("materials.stone"),
       value: "stone",
       img: <img className="h-8 w-8" src={stone} />,
     },
     {
       id: 3,
-      name: "Metal",
+      name: t("materials.metal"),
       value: "metal",
       img: <img className="h-8 w-8" src={metal} />,
     },
     {
       id: 4,
-      name: "Metal de alta calidad",
+      name: t("materials.hq"),
       value: "hq",
       img: <img className="h-8 w-8" src={hq} />,
     },
     {
       id: 5,
-      name: "Puerta de madera",
+      name: t("materials.dw"),
       value: "dw",
       img: <img className="h-8 w-8" src={dw} />,
     },
     {
       id: 6,
-      name: "Puerta de metal",
+      name: t("materials.dm"),
       value: "dm",
       img: <img className="h-8 w-8" src={dm} />,
     },
     {
       id: 7,
-      name: "Puerta de garaje",
+      name: t("materials.dg"),
       value: "dg",
       img: <img className="h-8 w-8" src={dg} />,
     },
     {
       id: 8,
-      name: "Puera armored",
+      name: t("materials.dq"),
       value: "dq",
       img: <img className="h-8 w-8" src={dq} />,
     },
   ];
+
+  const lang = [
+    {
+      id: 1,
+      name: "EN",
+      value: "en-EN",
+      img: <img className="h-6 w-8" src={en} />,
+    },
+    {
+      id: 2,
+      name: "ES",
+      value: "es-ES",
+      img: <img className="h-6 w-8" src={es} />,
+    },
+  ];
   const [selected, setSelected] = useState(material[0]);
   const [tiempo, setTiempo] = useState();
+  const [language, setLanguage] = useState(lang[0]);
 
   const handleTiempo = () => {
     const resource = selected.value;
@@ -135,19 +154,24 @@ export const Tabla = () => {
         <div className="">
           <Navbar />
         </div>
-
+        <button onClick={() => i18n.changeLanguage("es-ES")}>ES</button>
+        <button onClick={() => i18n.changeLanguage("en-UK")}>EN</button>
         <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
-          <h1 className="text-4xl font-medium font-face-r text-center ">
-            Rust Decay Calculator
+          <LanguageSelect
+            language={language}
+            setLanguage={setLanguage}
+            lang={lang}
+          />
+          <br />
+          <br />
+          <h1 className="text-4xl font-medium font-face-r text-center">
+            {t("messages.title")}
           </h1>
-          <p className="text-slate-500">
-            Elije los materiales para calcular el tiempo restante
-          </p>
-
+          <p className="text-slate-500">{t("messages.info1")}</p>
           <div className="flex flex-col space-y-5">
             <label htmlFor="material">
               <p className="font-medium text-slate-700 pb-2">
-                Tipo de material
+                {t("messages.info2")}
               </p>
               <Select
                 selected={selected}
@@ -157,7 +181,7 @@ export const Tabla = () => {
             </label>
             <label htmlFor="estructura">
               <p className="font-medium text-slate-700 pb-2">
-                Vida de la estructura
+                {t("messages.info3")}
               </p>
               <input
                 className="font-sans w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
@@ -175,17 +199,12 @@ export const Tabla = () => {
               className="w-full py-3 font-medium text-white bg-indigo-600 hover:bg-indigo-500 rounded-lg border-indigo-500 hover:shadow inline-flex space-x-2 items-center justify-center"
               onClick={handleTiempo}
             >
-              <span className="text-xl">Calcular</span>
+              <span className="text-xl">{t("messages.info4")}</span>
             </button>
           </div>
-          <span className="font-sans">
-            Considere que el tiempo de decay ve desde fuera hacia dentro, es
-            decir cuanto mas lejos este del TC (armario) menos tiempo tardara en
-            caer, asi que es un tiempo aproximado
-          </span>
+          <span className="font-sans">{t("messages.info5")}</span>
         </div>
       </div>
-      
     </>
   );
 };

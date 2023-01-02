@@ -1,0 +1,20 @@
+{
+    "materials": {
+        "wood": "Madera",
+        "stone": "Piedra",
+        "metal": "Metal",
+        "hq": "Metal de alta calidad",
+        "dw": "Puerta de madera",
+        "dm": "Puerta de metal",
+        "dg": "Puerta de garaje",
+        "dq": "Puerta blindada"
+    },
+    "messages": {
+        "title": "Calculadora de decay rust",
+        "info1": "Elije los materiales para calcular el tiempo restante",
+        "info2": "Tipo de material",
+        "info3": "Vida de la estructura",
+        "info4": "Calcular",
+        "info5": "Considere que el tiempo de decay va desde fuera hacia dentro, es decir, cuanto mas lejos este del TC (armario) antes caera esa estructura, por lo que es un tiempo aproximado"
+    }
+}

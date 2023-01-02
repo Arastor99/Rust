@@ -1,0 +1,21 @@
+{
+    "materials": {
+        "wood": "Wood",
+        "stone": "Stone",
+        "metal": "Metal",
+        "hq": "High Quality Metal",
+        "dw": "Wooden Door",
+        "dm": "Sheet Metal Door",
+        "dg": "Garaje Door",
+        "dq": "Armored Door"
+    },
+    "messages": {
+        "title": "Rust decay calculator",
+        "info1": "Choose the materials to calculate the remaining time",
+        "info2": "Type of material",
+        "info3": "Structure HP",
+        "info4": "Calculate",
+        "info5": "Consider that the decay time goes from the outside in, the further you are from the TC the less time it will take to fall, so it is an approximate time"
+    }
+    
+}
