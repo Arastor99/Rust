@@ -2,10 +2,19 @@ import React from "react";
 import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
-const LanguageSelect = ({ lang, language, setLanguage }) => {
+const LanguageSelect = ({ lang, language, setLanguage, i18n }) => {
+  const handleChange = (e) => {
+    i18n.changeLanguage(e.value);
+  };
   return (
     <div>
-      <Listbox value={language} onChange={setLanguage}>
+      <Listbox
+        value={language}
+        onChange={(e) => {
+          setLanguage;
+          handleChange(e);
+        }}
+      >
         <div className="relative mt-1 z-10">
           <Listbox.Button className="relative float-right z-10 cursor-default rounded-lg bg-stone-300 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
             <div className="space-x-3 items-center flex ">

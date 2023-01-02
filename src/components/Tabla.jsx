@@ -3,20 +3,20 @@ import Navbar from "./Navbar";
 import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
 import { useTranslation } from "react-i18next";
+import LanguageSelect from "./LanguageSelect";
 
 //images
 import image from "../../public/static/resources/bg.jpg";
-import wood from "/public/static/resources/wood.png";
-import stone from "/public/static/resources/stone.png";
-import metal from "/public/static/resources/metal.png";
-import hq from "/public/static/resources/hq.png";
-import dw from "/public/static/resources/dw.png";
-import dm from "/public/static/resources/dm.png";
-import dg from "/public/static/resources/dg.png";
-import dq from "/public/static/resources/dq.png";
-import en from "/public/static/resources/uk.png";
-import es from "/public/static/resources/spain.png";
-import LanguageSelect from "./LanguageSelect";
+import wood from "/static/resources/wood.png";
+import stone from "/static/resources/stone.png";
+import metal from "/static/resources/metal.png";
+import hq from "/static/resources/hq.png";
+import dw from "/static/resources/dw.png";
+import dm from "/static/resources/dm.png";
+import dg from "/static/resources/dg.png";
+import dq from "/static/resources/dq.png";
+import en from "/static/resources/uk.png";
+import es from "/static/resources/spain.png";
 
 export const Tabla = () => {
   const { t, i18n } = useTranslation();
@@ -154,13 +154,12 @@ export const Tabla = () => {
         <div className="">
           <Navbar />
         </div>
-        <button onClick={() => i18n.changeLanguage("es-ES")}>ES</button>
-        <button onClick={() => i18n.changeLanguage("en-UK")}>EN</button>
         <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
           <LanguageSelect
             language={language}
             setLanguage={setLanguage}
             lang={lang}
+            i18n={i18n}
           />
           <br />
           <br />
