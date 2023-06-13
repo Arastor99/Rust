@@ -150,6 +150,7 @@ export const Tabla = () => {
           height: "100vh",
           backgroundSize: "cover",
         }}
+        className="rustFont"
       >
         <div className="">
           <Navbar />

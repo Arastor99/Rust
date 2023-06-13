@@ -9,6 +9,6 @@
   font-weight: bold;
   }
 
- body {
+ .rustFont {
     font-family: "Rust";
    }
