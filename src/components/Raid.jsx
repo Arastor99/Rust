@@ -63,7 +63,6 @@ export const Raid = () => {
       return filteredExplosive;
     });
     setFilteredExplosives(filteredExplosives);
-    console.log(filteredExplosives);
   };
 
   return (

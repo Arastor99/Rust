@@ -8,7 +8,7 @@ import { Raid } from "./Raid";
 export const Rutas = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Tabla />} />
       <Route path="/decay" element={<Tabla />}></Route>
       <Route path="/raid" element={<Raid />}></Route>
       <Route path="/gens" element={<Gens />}></Route>
