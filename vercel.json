@@ -1,8 +1,7 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/decay", "dest": "/" },
+    { "src": "/raid", "dest": "/" }
   ]
 }
