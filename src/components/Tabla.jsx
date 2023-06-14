@@ -4,6 +4,7 @@ import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "./LanguageSelect";
+import { Helmet } from "react-helmet";
 
 //images
 import image from "../../public/static/resources/bg.jpg";
@@ -144,6 +145,13 @@ export const Tabla = () => {
 
   return (
     <>
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
       <div
         style={{
           backgroundImage: `url(${image})`,

@@ -4,6 +4,7 @@ import { content, raidExplosive } from "../data/raidtable";
 import fuelimg from "../../public/static/resources/lowgradefuel.png";
 import sulfurimg from "../../public/static/resources/sulfur.png";
 import { secondsToHHMMSS } from "../functions/decimalToString";
+import { Helmet } from "react-helmet";
 
 export const Raid = () => {
   const [filteredExplosives, setFilteredExplosives] = useState([]);
@@ -67,6 +68,13 @@ export const Raid = () => {
 
   return (
     <>
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
       <Navbar />
 
       <style>
@@ -76,6 +84,7 @@ export const Raid = () => {
           }
         `}
       </style>
+
       <div className=" h-screen ">
         <div className="bg-gray-800 text-white  flex justify-center rustFont">
           <div className="p-4">
