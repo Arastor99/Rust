@@ -11,6 +11,7 @@ import { BrowserRouter } from "react-router-dom";
 import global_es from "./translation/es/global.json";
 import global_en from "./translation/en/global.json";
 import { Rutas } from "./components/Rutas";
+import { Helmet } from "react-helmet";
 
 i18next.init({
   interpolation: { escapeValue: false },
@@ -29,6 +30,22 @@ i18next.init({
 inject();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
+    <Helmet>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-QZ6Q78SEQK"
+      ></script>
+      <script>
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QZ6Q78SEQK');
+    `}
+      </script>
+    </Helmet>
+
     <I18nextProvider i18n={i18next}>
       <BrowserRouter>
         <Rutas />
