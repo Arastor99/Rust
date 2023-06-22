@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import decay from "../../public/static/resources/decay.png";
-import raid from "../../public/static/resources/raid.png";
+import raid from "/public/static/resources/raid.png";
 import crossbreeding from "../../public/static/resources/crossbreeding.png";
 import { useTranslation } from "react-i18next";
 
