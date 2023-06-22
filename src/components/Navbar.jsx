@@ -1,24 +1,58 @@
 import React, { useState } from "react";
 import logo from "../logo.png";
+import LanguageSelect from "./LanguageSelect";
+import en from "/static/resources/uk.png";
+import es from "/static/resources/spain.png";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const lang = [
+    {
+      id: 1,
+      name: "EN",
+      value: "en-EN",
+      img: <img className="h-6 w-8" src={en} />,
+    },
+    {
+      id: 2,
+      name: "ES",
+      value: "es-ES",
+      img: <img className="h-6 w-8" src={es} />,
+    },
+  ];
+  const [language, setLanguage] = useState(lang[0]);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLanguageChange = (event) => {
-    // Lógica para cambiar el idioma
+    const selectedLanguage = lang.find(
+      (lang) => lang.value === event.target.value
+    );
+    setLanguage(selectedLanguage);
+    i18n.changeLanguage(selectedLanguage.value);
   };
+
+  useEffect(() => {
+    const userLanguage = navigator.language;
+    const defaultLanguage =
+      lang.find((lang) => lang.value === userLanguage) || lang[0];
+    setLanguage(defaultLanguage);
+    i18n.changeLanguage(defaultLanguage.value);
+  }, []);
 
   return (
     <nav className="bg-gray-900 rustFont">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img className="h-8 w-auto" src={logo} alt="Logo" />
-
+            <a href="/">
+              <img className="h-8 w-auto" src={logo} alt="Logo" />
+            </a>
             {/* Opciones del navbar en el modo de escritorio */}
             <div className="hidden md:flex md:space-x-4 ml-4">
               <a
@@ -44,14 +78,12 @@ const Navbar = () => {
 
           <div className="flex items-center">
             {/* Selector de idioma en el navbar principal */}
-            <select
-              className="hidden md:block text-gray-300 bg-transparent border-none"
-              onChange={handleLanguageChange}
-            >
-              <option value="es">ES</option>
-              <option value="en">EN</option>
-              {/* Agrega más opciones de idioma según tus necesidades */}
-            </select>
+            <LanguageSelect
+              language={language}
+              setLanguage={setLanguage}
+              lang={lang}
+              i18n={i18n}
+            />
 
             {/* Botón para desplegar el menú en dispositivos móviles */}
             <button

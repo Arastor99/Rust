@@ -16,6 +16,45 @@
         "info3": "Structure HP",
         "info4": "Calculate",
         "info5": "Consider that the decay time goes from the outside in, the further you are from the TC the less time it will take to fall, so it is an approximate time"
+    },
+
+    "home":{
+        "decay": "You can insert the type of material and the remaining hp, it will give you a fairly approximate time of when the structure will decay.",
+        "raid": "You can choose the type of structure and see how much it would cost depending on the weapon/explosive.",
+        "add-genes": "Add Genes: ",
+        "add-genes-message": "Insert the genes you have collected.",
+        "target": "Target: ",
+        "target-message": "The objective of your genetics, insert the one you prefer (the order does not matter) and the calculator will take care of getting as close as possible with the genetics you have offered.",
+        "available-genetics": "Available Genetics:",
+        "available-genetics-message":"The list of genes you have entered.",
+        "breeding-genetics": "Breeding Genetics: ",
+        "breeding-genetics-message": "The genes that you have to mix to obtain the result indicated below, I recommend using as the recipient plant the one that contains the most G.",
+        "result": "Result: ",
+        "result-message": "The result you will get, if you get more than one result it means that there are 50% probabilities in some columns."
+    },
+    "raid":{
+        "twig":"TWIG BUILD",
+        "wood":"WOOD BUILD",
+        "stone":"STONE BUILD",
+        "metal":"METAL BUILD",
+        "hq":"HQ BUILD",
+        "wood-door":"WOODEN DOOR",
+        "metal-door":"METAL DOOR",
+        "garage-door":"GARAGE DOOR",
+        "armored-door":"ARMORED DOOR",
+        "ladder-hatch":"LADDER HATCH",
+        "wooden-wall":"WOODEN WALL",
+        "stone-wall":"STONE WALL"
+    },
+    "crossbreeding":{
+        "add-genes": "Add Genes",
+        "target": "Target",
+        "available-genetics": "Available Genetics",
+        "breeding-genetics": "Breeding Genetics",
+        "result": "Result",
+        "insert": "Insert",
+        "target-info": "Enter the desired genetics for example YYYGGG (which is the same as YGYYGG, the order does not matter).",
+        "result-info": "The result you will get, if you get more than one result it means that there are 50% probabilities in some columns."
     }
     
 }

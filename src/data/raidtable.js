@@ -1231,7 +1231,7 @@ export const raidExplosive = [
     {
       id: 8,
       key: "gd",
-      text: "Garaje Door",
+      text: "Garage Door",
       img: "/static/resources/dg.png",
       soft: false,
     },

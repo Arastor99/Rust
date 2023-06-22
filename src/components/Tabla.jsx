@@ -164,12 +164,14 @@ export const Tabla = () => {
           <Navbar />
         </div>
         <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
+          {/*
           <LanguageSelect
             language={language}
             setLanguage={setLanguage}
             lang={lang}
             i18n={i18n}
           />
+      */}
           <br />
           <br />
           <h1 className="text-4xl font-medium font-face-r text-center">

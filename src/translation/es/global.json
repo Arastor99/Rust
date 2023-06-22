@@ -16,5 +16,43 @@
         "info3": "Vida de la estructura",
         "info4": "Calcular",
         "info5": "Considere que el tiempo de decay va desde fuera hacia dentro, es decir, cuanto mas lejos este del TC (armario) antes caera esa estructura, por lo que es un tiempo aproximado"
+    },
+    "home":{
+        "decay": "Elije el tipo de material y la vida restante, la calculadora te dara un tiempo bastante aproximado de cuando la estructura se caera.",
+        "raid": "Elije el tipo de estructura y podras ver cuanto te costara destruirla dependiendo del arma/explosivo.",
+        "add-genes": "Añadir Genes: ",
+        "add-genes-message": "Introduce los genes que tengas.",
+        "target": "Objetivo: ",
+        "target-message": "El objetivo de tu genetica, introduce el que prefieras (el orden no importa) y la calculadora se encargara de darte el resultado mas parecido posible con las geneticas que has introducido.",
+        "available-genetics": "Genetica disponible: ",
+        "available-genetics-message": "La lista de tus genes introducidos.",
+        "breeding-genetics": "Cruze de plantas: ",
+        "breeding-genetics-message": "Los genes que tienes que mezclar para obtener el resultado indicado abajo, recomiendo usar como planta receptora aquella que tenga mas G.",
+        "result": "Resultado: ",
+        "result-message": "El resultado que obtendras, si obtienes mas de un resultado significa que hay 50% de probabilidades en algunas columnas."
+    },
+    "raid":{
+        "twig":"ESTRUCUTRA DE PAJA",
+        "wood":"ESTRUCTURA DE MADERA",
+        "stone":"ESTRUCTURA DE PIEDRA",
+        "metal":"ESTRUCTURA DE METAL",
+        "hq":"ESTRUCTURA DE HQ",
+        "wood-door":"PUERTA DE MADERA",
+        "metal-door":"PUERTA DE METAL",
+        "garage-door":"PUERTA DE GARAJE",
+        "armored-door":"PUERTA BLINDADA",
+        "ladder-hatch":"TRAMPILLA",
+        "wooden-wall":"MURO DE MADERA",
+        "stone-wall":"MURO DE PIEDRA"
+    },
+    "crossbreeding":{
+        "add-genes": "Añadir gen",
+        "target": "Objetivo",
+        "available-genetics": "Lista de genes",
+        "breeding-genetics": "Cruze de plantas",
+        "result": "Resultado",
+        "insert": "Insertar",
+        "target-info": "Introduce la genetica deseada por ejemplo: YYYGGG (Que es lo mimso que YGGYGY), el orden no importa.",
+        "result-info": "Si hay mas de un resultado significa que en algunas columnas tienes 50% de posibilidades."
     }
 }
