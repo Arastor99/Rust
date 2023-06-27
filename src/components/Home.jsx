@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 
 import { Tabla } from "../components/Tabla";
@@ -8,6 +8,14 @@ import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
 
 export const Home = () => {
+  const [domain, setDomain] = useState(window.location.hostname);
+
+  if (domain !== "rust-aio.com") {
+    setDomain("https://rust-aio.com");
+    console.log(domain);
+    window.location.replace("https://rust-aio.com");
+  }
+
   return (
     <>
       <Helmet>
