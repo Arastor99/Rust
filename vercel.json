@@ -1,8 +1,6 @@
 {
     "routes": [
       { "src": "/", "dest": "/" },
-      { "src": "/decay", "dest": "/" },
-      { "src": "/raid", "dest": "/" },
-      { "src": "/gens", "dest": "/" }
+      { "src": "/info", "dest": "/" }
     ]
   }
