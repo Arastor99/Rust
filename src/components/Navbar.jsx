@@ -5,6 +5,8 @@ import en from "/static/resources/uk.png";
 import es from "/static/resources/spain.png";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { Link, Route } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +46,6 @@ const Navbar = () => {
     setLanguage(defaultLanguage);
     i18n.changeLanguage(defaultLanguage.value);
   }, []);
-
   return (
     <nav className="bg-gray-900 rustFont">
       <div className="container mx-auto px-4 py-4">
@@ -55,23 +56,40 @@ const Navbar = () => {
             </a>
             {/* Opciones del navbar en el modo de escritorio */}
             <div className="hidden md:flex md:space-x-4 ml-4">
-              <a
-                href="/decay"
+              <HashLink
+                smooth
+                to="/#decay"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Decay calculator
-              </a>
-              <a
-                href="/raid"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Raid table
-              </a>
-              <a
-                href="/gens"
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#breeder"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 genetic
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#cameras"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Cameras
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#raid"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Raid table
+              </HashLink>
+
+              <a
+                href="/info"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium "
+              >
+                How to use
               </a>
             </div>
           </div>

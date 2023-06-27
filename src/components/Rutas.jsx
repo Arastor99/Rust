@@ -4,14 +4,13 @@ import { Home } from "./Home";
 import { Tabla } from "./Tabla";
 import { Raid } from "./Raid";
 import { Breeder } from "./gens/Breeder";
+import { Info } from "./Info";
 
 export const Rutas = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/decay" element={<Tabla />}></Route>
-      <Route path="/raid" element={<Raid />}></Route>
-      <Route path="/gens" element={<Breeder />}></Route>
+      <Route path="/info" element={<Info />}></Route>
     </Routes>
   );
 };

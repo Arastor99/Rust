@@ -68,15 +68,6 @@ export const Raid = () => {
 
   return (
     <>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
-      <Navbar />
-
       <style>
         {`
           .hide-row {

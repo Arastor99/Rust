@@ -154,16 +154,13 @@ export const Tabla = () => {
       </Helmet>
       <div
         style={{
-          backgroundImage: `url(${image})`,
           height: "100vh",
           backgroundSize: "cover",
         }}
-        className="rustFont"
+        className="rustFont bg-gray-800"
       >
-        <div className="">
-          <Navbar />
-        </div>
-        <div className="mt-24 opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
+        <div className="pt-24"></div>
+        <div className=" opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
           {/*
           <LanguageSelect
             language={language}

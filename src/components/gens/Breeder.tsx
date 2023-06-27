@@ -14,7 +14,6 @@ export function Breeder() {
   const { t, i18n } = useTranslation();
   return (
 <>
-  <Navbar />
 <div className='bg-gray-800 min-h-screen pt-16'>
 
   <div className="container mx-auto max-w-lg px-4 text-gray-50 bg-gray-600">
