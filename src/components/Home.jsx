@@ -10,12 +10,13 @@ import { Cameras } from "../components/Cameras";
 export const Home = () => {
   const [domain, setDomain] = useState(window.location.hostname);
 
-  if (domain !== "rust-aio.com") {
-    setDomain("https://rust-aio.com");
-    console.log(domain);
-    window.location.replace("https://rust-aio.com");
+  {
+    if (domain !== "rust-aio.com") {
+      setDomain("https://rust-aio.com");
+      console.log(domain);
+      window.location.replace("https://rust-aio.com");
+    }
   }
-
   return (
     <>
       <Helmet>
