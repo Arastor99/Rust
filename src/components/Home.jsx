@@ -8,8 +8,6 @@ import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
 
 export const Home = () => {
-  {
-    /*
   const [domain, setDomain] = useState(window.location.hostname);
 
   {
@@ -18,8 +16,6 @@ export const Home = () => {
       console.log(domain);
       window.location.replace("https://rust-aio.com");
     }
-  }
-  */
   }
   return (
     <>
