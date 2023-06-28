@@ -55,6 +55,23 @@
         "insert": "Insert",
         "target-info": "Enter the desired genetics for example YYYGGG (which is the same as YGYYGG, the order does not matter).",
         "result-info": "The result you will get, if you get more than one result it means that there are 50% probabilities in some columns."
+    },
+    "policy": {
+        "privacy": "Privacy Policy",
+        "text-privacy":"We appreciate your interest in our web page dedicated to providing information about Rust. The privacy and security of your personal data are of the utmost importance to us. The following is our privacy policy, which describes how we collect, use and protect the information you provide to us while using our website.",
+        "info": "Information gathering",
+        "text-info": "Our website is designed to provide information about Rust, and we do not require users to enter personal information to use our tools or access the information provided. However, we may collect non-personal and anonymous information automatically through technologies such as cookies and server logs. This data is used to improve the functionality and performance of our website, and cannot be used to identify you personally.",
+        "use": "Use of information",
+        "text-use":"The automatically collected non-personal information is used to improve your experience on our website, analyze trends and gather demographic data. We will not share this information with third parties without your explicit consent.",
+        "security": "Security of the information",
+        "text-security":"We are committed to protecting the information we collect. We implement appropriate security measures to protect your data against unauthorized access, modification, disclosure or destruction.",
+        "external": "External links",
+        "text-external": "Our website may contain links to external websites that are not under our control. We are not responsible for the privacy practices or the content of such websites. We recommend that you review the privacy policies of any website you access from our page.",
+        "change": "Privacy Policy Changes",
+        "text-change":"We reserve the right to modify this privacy policy at any time. Any changes made will be posted on this page with an updated effective date. We encourage you to periodically review this policy to be aware of any changes.",
+        "contact": "Contact Us",
+        "text-contact": "If you have any questions or concerns about our privacy policy, or if you wish to exercise your rights in relation to your personal data, please contact us through the following email: alvarito19992009@hotmail.com. Thank you for trusting us and using our website to obtain information about the video game."
+
     }
     
 }

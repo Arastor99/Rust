@@ -54,5 +54,22 @@
         "insert": "Insertar",
         "target-info": "Introduce la genetica deseada por ejemplo: YYYGGG (Que es lo mimso que YGGYGY), el orden no importa.",
         "result-info": "Si hay mas de un resultado significa que en algunas columnas tienes 50% de posibilidades."
+    },
+    "policy": {
+        "privacy": "Política de Privacidad",
+        "text-privacy":" Agradecemos su interés en nuestra página web dedicada a proporcionar información sobre Rust. La privacidad y la seguridad de sus datos personales son de suma importancia para nosotros. A continuación, le presentamos nuestra política de privacidad, que describe cómo recopilamos, utilizamos y protegemos la información que usted nos proporciona mientras utiliza nuestra página web.",
+        "info": "Recopilación de información",
+        "text-info": "Nuestra página web está diseñada para brindar información sobre Rust, y no requerimos que los usuarios introduzcan datos personales para utilizar nuestras herramientas o acceder a la información proporcionada. Sin embargo, es posible que recopilemos información no personal y anónima automáticamente a través de tecnologías como cookies y registros de servidores. Estos datos se utilizan para mejorar la funcionalidad y el rendimiento de nuestra página web, y no se pueden utilizar para identificarlo personalmente.",
+        "use": "Uso de la información",
+        "text-use":"La información no personal recopilada automáticamente se utiliza para mejorar su experiencia en nuestra página web, analizar tendencias y recopilar datos demográficos. No compartiremos esta información con terceros sin su consentimiento explícito.",
+        "security": "Seguridad de la información",
+        "text-security":"Nos comprometemos a proteger la información que recopilamos. Implementamos medidas de seguridad adecuadas para proteger sus datos contra accesos no autorizados, modificaciones, divulgaciones o destrucción.",
+        "external": "Enlaces externos",
+        "text-external": "Nuestra página web puede contener enlaces a sitios web externos que no están bajo nuestro control. No nos hacemos responsables de las prácticas de privacidad o del contenido de dichos sitios web. Le recomendamos que revise las políticas de privacidad de cualquier sitio web al que acceda desde nuestra página.",
+        "change": "Cambios en la política de privacidad",
+        "text-change":"Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio realizado se publicará en esta página con una fecha de entrada en vigor actualizada. Le recomendamos que revise periódicamente esta política para estar al tanto de cualquier cambio.",
+        "contact": "Contáctenos",
+        "text-contact": "Si tiene alguna pregunta o inquietud acerca de nuestra política de privacidad, o si desea ejercer sus derechos en relación con sus datos personales, por favor contáctenos a través de el siguiente email: alvarito19992009@hotmail.com. Gracias por confiar en nosotros y utilizar nuestra página web para obtener información sobre el videojuego."
+
     }
 }
