@@ -25,7 +25,9 @@ export const Info = () => {
 
         <main className="container mx-auto px-4 py-8">
           <div className="flex">
-            <div className="w-1/4 flex items-center justify-center"></div>
+            <div className="w-1/4 flex items-center justify-center">
+              <div id="ezoic-pub-ad-placeholder-105"> </div>
+            </div>
 
             <div className="flex-1 mx-2 lg:mx-4">
               <h2 className="text-4xl font-bold mb-4 text-center">
@@ -98,7 +100,9 @@ export const Info = () => {
               </div>
             </div>
 
-            <div className="w-1/4 flex items-center justify-center"></div>
+            <div className="w-1/4 flex items-center justify-center">
+              <div id="ezoic-pub-ad-placeholder-106"> </div>
+            </div>
           </div>
         </main>
       </div>

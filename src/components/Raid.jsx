@@ -97,7 +97,7 @@ export const Raid = () => {
           </div>
         </div>
         <div className="bg-gray-800 min-h-full  5 pt-12">
-          <div class="relative overflow-x-auto mx-auto max-w-4xl font-sans bg-gray-500 overflow-y-hidden">
+          <div className="relative overflow-x-auto mx-auto max-w-4xl font-sans bg-gray-500 overflow-y-hidden">
             <div className="flex items-center space-x-12 my-6 ml-8 justify-center  text-base rustFont">
               <label
                 htmlFor="melee"
@@ -140,22 +140,22 @@ export const Raid = () => {
                 <span className="ml-2 text-gray-800">Explosives</span>
               </label>
             </div>
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
+            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
                 <tr>
-                  <th scope="col" class="px-6 py-3 text-base">
+                  <th scope="col" className="px-6 py-3 text-base">
                     Tool
                   </th>
-                  <th scope="col" class="px-6 py-3 text-base">
+                  <th scope="col" className="px-6 py-3 text-base">
                     Quantity
                   </th>
-                  <th scope="col" class="px-6 py-3 text-base">
+                  <th scope="col" className="px-6 py-3 text-base">
                     Time
                   </th>
-                  <th scope="col" class="px-6 py-3 text-base">
+                  <th scope="col" className="px-6 py-3 text-base">
                     Fuel
                   </th>
-                  <th scope="col" class="px-6 py-3 text-base">
+                  <th scope="col" className="px-6 py-3 text-base">
                     Sulfur
                   </th>
                 </tr>

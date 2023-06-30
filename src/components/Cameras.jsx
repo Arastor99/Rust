@@ -5,26 +5,26 @@ export const Cameras = () => {
     <div className="flex justify-center bg-gray-800">
       <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl">
         <div className="relative overflow-x-auto">
-          <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
-                <th scope="col" class="px-6 py-3 text-center">
+                <th scope="col" className="px-6 py-3 text-center">
                   Location
                 </th>
-                <th scope="col" class="px-6 py-3 text-center">
+                <th scope="col" className="px-6 py-3 text-center">
                   RUST CCTV Codes
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Large Oil Rig
                 </th>
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>OILRIG2HELI</li>
                     <li>OILRIG2DOCK</li>
@@ -42,14 +42,14 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Small Oil Rig
                 </th>
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>OILRIG1HELI</li>
                     <li>OILRIG1DOCK</li>
@@ -61,15 +61,15 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Underwater Labs
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>AUXPOWER****</li>
                     <li>BRIG****</li>
@@ -87,15 +87,15 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Outpost
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>COMPOUNDSTREET</li>
                     <li>COMPOUNDMUSIC</li>
@@ -104,15 +104,15 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Nuclear Missile Silo
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>SILOEXIT1</li>
                     <li>SILOEXIT2</li>
@@ -122,59 +122,59 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Dome
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>DOME1</li>
                     <li>DOMETOP</li>
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Airfield
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>AIRFIELDHELIPAD</li>
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Airfield
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>COMPOUND******</li>
                     <li>OUTDOOR******</li>
                   </ul>
                 </td>
               </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                 <th
                   scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
                 >
                   Bandit Camp
                 </th>
 
-                <td class="px-6 py-4 text-center">
+                <td className="px-6 py-4 text-center">
                   <ul>
                     <li>CASINOTOWN</li>
                     <li>WEAPONS</li>

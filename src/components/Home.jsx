@@ -8,6 +8,8 @@ import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
 
 export const Home = () => {
+  {
+    /*
   const [domain, setDomain] = useState(window.location.hostname);
 
   {
@@ -16,6 +18,8 @@ export const Home = () => {
       console.log(domain);
       window.location.replace("https://rust-aio.com");
     }
+  }
+  */
   }
   return (
     <>
@@ -28,19 +32,31 @@ export const Home = () => {
       </Helmet>
       <Navbar />
 
-      <div id="decay">
-        <Tabla />
-      </div>
+      <div className="md:flex bg-gray-800">
+        <aside className="md:w-1/4 bg-gray-800 md:h-screen">
+          <div id="ezoic-pub-ad-placeholder-103"> </div>
+        </aside>
 
-      <div id="breeder">
-        <Breeder />
-      </div>
+        <div className="md:w-1/2">
+          <div id="decay">
+            <Tabla />
+          </div>
 
-      <div id="cameras" className="py-24 bg-gray-800">
-        <Cameras />
-      </div>
-      <div id="raid">
-        <Raid />
+          <div id="breeder">
+            <Breeder />
+          </div>
+
+          <div id="cameras" className="py-24 bg-gray-800">
+            <Cameras />
+          </div>
+          <div id="raid">
+            <Raid />
+          </div>
+        </div>
+
+        <aside className="md:w-1/4 bg-gray-800 md:h-screen">
+          <div id="ezoic-pub-ad-placeholder-104"> </div>
+        </aside>
       </div>
     </>
   );
