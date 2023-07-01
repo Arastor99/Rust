@@ -76,7 +76,7 @@ export const Raid = () => {
         `}
       </style>
 
-      <div className=" h-screen ">
+      <div className=" min-h-screen ">
         <div className="bg-gray-800 text-white  flex justify-center rustFont">
           <div className="p-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
