@@ -57,10 +57,18 @@ export const Home = () => {
           <div id="ezoic-pub-ad-placeholder-108"> </div>
         </div>
         <div className="w-full bg-gray-800 order-last md:order-none">
-          <Tabla />
-          <Breeder />
-          <Cameras />
-          <Raid />
+          <div id="decay">
+            <Tabla />
+          </div>
+          <div id="breeder">
+            <Breeder />
+          </div>
+          <div id="cameras">
+            <Cameras />
+          </div>
+          <div id="raid">
+            <Raid />
+          </div>
         </div>
         <div className="w-full md:w-1/4 bg-gray-800 mx-4 hidden md:block">
           <div id="ezoic-pub-ad-placeholder-107"> </div>
