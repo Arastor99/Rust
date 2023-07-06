@@ -6,6 +6,7 @@ import { Raid } from "./Raid";
 import { Breeder } from "./gens/Breeder";
 import { Info } from "./Info";
 import { Privacy } from "./Privacy";
+import { Monuments } from "./Monuments";
 
 export const Rutas = () => {
   return (
@@ -13,6 +14,7 @@ export const Rutas = () => {
       <Route path="/" element={<Home />} />
       <Route path="/info" element={<Info />}></Route>
       <Route path="/privacy" element={<Privacy />}></Route>
+      <Route path="/monuments" element={<Monuments />}></Route>
     </Routes>
   );
 };

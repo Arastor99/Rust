@@ -5,6 +5,7 @@ import crossbreeding from "../../public/static/resources/crossbreeding.png";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import Navbar from "./Navbar";
+import gif from "../../public/static/resources/melee/gif.gif";
 export const Info = () => {
   const { t, i18n } = useTranslation();
 
@@ -30,7 +31,12 @@ export const Info = () => {
             </div>
 
             <div className="flex-1 mx-2 lg:mx-4">
-              <h2 className="text-4xl font-bold mb-4 text-center">
+              <div className="flex justify-center items-center pt-8">
+                <a href="https://coin-birds.com/?en=Arastor99" target="_blank">
+                  <img src={gif} alt="¡Ganancias cada 10 minutos!" />
+                </a>
+              </div>
+              <h2 className="text-4xl font-bold my-4 text-center">
                 <a href="/decay" className="text-white hover:underline">
                   Decay Calculator
                 </a>

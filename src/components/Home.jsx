@@ -6,6 +6,7 @@ import { Raid } from "../components/Raid";
 import { Breeder } from "../components/gens/Breeder";
 import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
+import gif from "../../public/static/resources/melee/gif.gif";
 
 export const Home = () => {
   const [domain, setDomain] = useState(window.location.hostname);
@@ -53,10 +54,12 @@ export const Home = () => {
 
       <Navbar />
       <div className="flex flex-col pt-24 bg-gray-800 md:flex-row overflow-x-hidden">
-        <div className="w-full md:w-1/4 bg-gray-800 px-4 md:mx-4">
-          <div id="ezoic-pub-ad-placeholder-108"> </div>
-        </div>
         <div className="w-full bg-gray-800 order-last md:order-none">
+          <div className="flex justify-center items-center">
+            <a href="https://coin-birds.com/?en=Arastor99" target="_blank">
+              <img src={gif} alt="¡Ganancias cada 10 minutos!" />
+            </a>
+          </div>
           <div id="decay">
             <Tabla />
           </div>
@@ -69,9 +72,6 @@ export const Home = () => {
           <div id="raid">
             <Raid />
           </div>
-        </div>
-        <div className="w-full md:w-1/4 bg-gray-800 mx-4 hidden md:block">
-          <div id="ezoic-pub-ad-placeholder-107"> </div>
         </div>
       </div>
 
