@@ -66,7 +66,7 @@ export const Home = () => {
           <div id="breeder">
             <Breeder />
           </div>
-          <div id="cameras">
+          <div id="cameras" className="my-12">
             <Cameras />
           </div>
           <div id="raid">

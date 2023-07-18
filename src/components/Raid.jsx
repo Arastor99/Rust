@@ -183,14 +183,32 @@ export const Raid = () => {
                         <span className="font-bold text-lg">{item.text}</span>
                       </div>
                     </td>
-                    <td className="px-6 py-4">{item.quantity}</td>
-                    <td className="px-6 py-4">{secondsToHHMMSS(item.time)}</td>
+                    <td className="px-6 py-4">
+                      {item.quantity <= 0 || item.quantity === undefined ? (
+                        "-"
+                      ) : (
+                        <div className="flex items-center justify-center">
+                          {item.quantity}
+                        </div>
+                      )}
+                    </td>
+
+                    <td className="px-6 py-4">
+                      {" "}
+                      {item.time <= 0 || item.time === undefined ? (
+                        "-"
+                      ) : (
+                        <div className="flex items-center justify-center">
+                          {item.time}
+                        </div>
+                      )}
+                    </td>
                     <td className="px-6 py-4">
                       {item.fuel <= 0 || item.fuel === undefined ? (
                         "-"
                       ) : (
-                        <div className="flex items-center">
-                          <img src={fuelimg} alt="sulfur" className="mr-2" />
+                        <div className="flex items-center ">
+                          <img src={fuelimg} alt="fuel" className="mr-2" />
                           {item.fuel}
                         </div>
                       )}
