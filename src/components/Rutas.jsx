@@ -7,6 +7,7 @@ import { Breeder } from "./gens/Breeder";
 import { Info } from "./Info";
 import { Privacy } from "./Privacy";
 import { Monuments } from "./Monuments";
+import { Diesel } from "./Diesel";
 
 export const Rutas = () => {
   return (
@@ -15,6 +16,7 @@ export const Rutas = () => {
       <Route path="/info" element={<Info />}></Route>
       <Route path="/privacy" element={<Privacy />}></Route>
       <Route path="/monuments" element={<Monuments />}></Route>
+      <Route path="/diesel" element={<Diesel />}></Route>
     </Routes>
   );
 };

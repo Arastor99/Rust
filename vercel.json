@@ -2,6 +2,7 @@
     "routes": [
       { "src": "/", "dest": "/" },
       { "src": "/info", "dest": "/" },
-      { "src": "/Privacy", "dest": "/" }
+      { "src": "/Privacy", "dest": "/" },
+      { "src": "/monuments", "dest": "/" }
     ]
   }

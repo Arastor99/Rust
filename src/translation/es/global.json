@@ -71,5 +71,39 @@
         "contact": "Contáctenos",
         "text-contact": "Si tiene alguna pregunta o inquietud acerca de nuestra política de privacidad, o si desea ejercer sus derechos en relación con sus datos personales, por favor contáctenos a través de el siguiente email: alvarito19992009@hotmail.com. Gracias por confiar en nosotros y utilizar nuestra página web para obtener información sobre el videojuego."
 
+    },
+    "mname":{
+        "water": "Planta Potabilizadora",
+        "power": "Central Nuclear",
+        "harbor": "Puerto",
+        "harbors": "Puerto Pequeño",
+        "harborl": "Puerto Grande",
+        "airfield": "Aeródromo",
+        "junkyard": "Vertedero",
+        "launch": "Estación de Lanzamiento",
+        "lighthouse": "Faro",
+        "tunel": "Tunel Militar",
+        "silo": "Silo Misilístico",
+        "satelite": "Satelite",
+        "sewer": "Rama de Alcantarillados",
+        "train": "Patio Ferroviario",
+        "oxum": "Gasolinera Oxum",
+        "supermarket": "Supermercado",
+        "outpost": "Comprandola en Ruinas"
+    },
+    "misc": {
+        "green": "Tarjeta Verde",
+        "blue": "Tarjeta Azul",
+        "red": "Tarjeta Roja",
+        "rad": "25 de protección de rad",
+        "rad10": "10 de protección de rad",
+        "radlaunch": "Detras de tarjeta roja necesitaras un traje de rad y agua",
+        "monument": "Monumentos",
+        "fuse": "Fusible Eléctrico",
+        "guns": "Armas para eliminar a los NPC's",
+        "optional": "(opcional)",
+        "color": "Color de Tarjeta",
+        "find": "Donde encontrarla"
+
     }
 }

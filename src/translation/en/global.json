@@ -72,6 +72,42 @@
         "contact": "Contact Us",
         "text-contact": "If you have any questions or concerns about our privacy policy, or if you wish to exercise your rights in relation to your personal data, please contact us through the following email: alvarito19992009@hotmail.com. Thank you for trusting us and using our website to obtain information about the video game."
 
+    },
+    "mname":{
+        "water": "Water Treatment",
+        "power": "Power Plant",
+        "harbor": "Harbor",
+        "harbors": "Small Harbor",
+        "harborl": "Large Harbor",
+        "airfield": "Airfield",
+        "junkyard": "Junkyard",
+        "launch": "Launch Site",
+        "lighthouse": "Lighthouse",
+        "tunel": "Military Tunnel",
+        "silo": "Nuclear Missile Silo",
+        "satelite": "Satellite Dish",
+        "sewer": "Sewer Branch",
+        "train": "Train Yard",
+        "oxum": "Oxum's Gas Station",
+        "supermarket": "Supermarket",
+        "outpost": "Buy at Outpost"
+    },
+
+    "misc": {
+        "green": "Green Keycard",
+        "blue": "Blue Keycard",
+        "red": "Red Keycard",
+        "rad": "25 rad protection",
+        "rad10": "10 rad protection",
+        "radlaunch": "Behind red keycard requires Rad suit and water",
+        "monument": "Monuments",
+        "fuse": "Electric Fuse",
+        "guns": "Guns to kill NPC's",
+        "optional": "(optional)",
+        "color": "Keycard color",
+        "find": "Where to find"
+
     }
+
     
 }

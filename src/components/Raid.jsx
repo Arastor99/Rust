@@ -61,6 +61,7 @@ export const Raid = () => {
           filteredExplosive[newProp] = object[prop];
         }
       }
+
       return filteredExplosive;
     });
     setFilteredExplosives(filteredExplosives);
@@ -169,11 +170,11 @@ export const Raid = () => {
                     className={
                       item.type === "melee"
                         ? "hide-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center"
-                        : "bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center "
+                        : "bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center"
                     }
                   >
-                    <td className="px-6 py-4  ">
-                      <div className="flex items-center ">
+                    <td className="px-6 py-4">
+                      <div className="flex items-center">
                         <img
                           src={item.img}
                           alt="Imagen"
@@ -185,7 +186,7 @@ export const Raid = () => {
                     <td className="px-6 py-4">{item.quantity}</td>
                     <td className="px-6 py-4">{secondsToHHMMSS(item.time)}</td>
                     <td className="px-6 py-4">
-                      {item.fuel <= 0 || item.fuel == undefined ? (
+                      {item.fuel <= 0 || item.fuel === undefined ? (
                         "-"
                       ) : (
                         <div className="flex items-center">
@@ -195,7 +196,7 @@ export const Raid = () => {
                       )}
                     </td>
                     <td className="px-6 py-4">
-                      {item.sulfur <= 0 || item.sulfur == undefined ? (
+                      {item.sulfur <= 0 || item.sulfur === undefined ? (
                         "-"
                       ) : (
                         <div className="flex items-center">

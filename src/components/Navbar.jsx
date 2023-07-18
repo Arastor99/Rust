@@ -10,6 +10,8 @@ import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   const { t, i18n } = useTranslation();
   const lang = [
     {
@@ -37,6 +39,10 @@ const Navbar = () => {
     );
     setLanguage(selectedLanguage);
     i18n.changeLanguage(selectedLanguage.value);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
   useEffect(() => {
@@ -91,6 +97,37 @@ const Navbar = () => {
               >
                 How to use
               </a>
+              <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                <button
+                  onClick={toggleDropdown}
+                  className="flex items-center focus:outline-none"
+                >
+                  Monuments
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path fillRule="evenodd" d="M10 12l-6-6h12l-6 6z" />
+                  </svg>
+                </button>
+                {isDropdownOpen && (
+                  <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg">
+                    <a
+                      href="/monuments"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Monuments puzzles
+                    </a>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Diesel locations
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
 
@@ -152,16 +189,38 @@ const Navbar = () => {
               >
                 genetic
               </a>
-
+              <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
+                <button
+                  onClick={toggleDropdown}
+                  className="flex items-center focus:outline-none"
+                >
+                  Monuments
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path fillRule="evenodd" d="M10 12l-6-6h12l-6 6z" />
+                  </svg>
+                </button>
+                {isDropdownOpen && (
+                  <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg">
+                    <a
+                      href="/monuments"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Monuments puzzles
+                    </a>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Diesel locations
+                    </a>
+                  </div>
+                )}
+              </div>
               {/* Selector de idioma dentro del menú desplegable */}
-              <select
-                className="mt-4 text-gray-300 bg-transparent border-none"
-                onChange={handleLanguageChange}
-              >
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-                {/* Agrega más opciones de idioma según tus necesidades */}
-              </select>
             </div>
           </div>
         </div>
