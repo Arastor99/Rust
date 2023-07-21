@@ -199,7 +199,7 @@ export const Raid = () => {
                         "-"
                       ) : (
                         <div className="flex items-center justify-center">
-                          {item.time}
+                          {secondsToHHMMSS(item.time)}
                         </div>
                       )}
                     </td>
