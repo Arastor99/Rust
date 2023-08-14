@@ -20,6 +20,7 @@ import Navbar from "./Navbar";
 import YouTube from "react-youtube";
 import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
+import { Monument } from "./Monument";
 
 export const Monuments = () => {
   const { t, i18n } = useTranslation();
@@ -255,606 +256,285 @@ export const Monuments = () => {
             </div>
           </section>
           <div className="flex justify-center items-center bg-gray-900">
-            <div className="max-w-3xl">
+            <div className="max-w-6xl">
               <h1 className="text-4xl font-bold text-white mb-8 mt-24">
                 Monumentos
               </h1>
+              <Monument
+                id="water"
+                name={t("mname.water")}
+                url="https://www.youtube.com/embed/v0SNddMqBIo"
+                requirements={[
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="power"
+                name={t("mname.power")}
+                url="https://www.youtube.com/embed/ngztOcif0bo"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white" />
+              <Monument
+                id="harbora"
+                name={t("mname.harbors")}
+                url="https://www.youtube.com/embed/V5eEgMLZiMs"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
 
-              <div className="container mx-auto px-2 py-8" id="water">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.water")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/v0SNddMqBIo"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-32" />
-              <div className="container mx-auto px-2 py-8" id="power">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.power")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/ngztOcif0bo"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="harbora">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.harbors")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/V5eEgMLZiMs"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="harborb">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.harborl")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/CmtOtDklnG4"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="airfield">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.airfield")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}
-                        {" x 2 "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/V5eEgMLZiMs"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="junkyard">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.junkyard")}
-                    </h2>
-                    <ul className="list-disc pl-4"></ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/4ncY8syxbzQ"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="launch">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.launch")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.red")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={red}
-                          alt="red"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}
-                        {" x 2 "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                      <li>{t("misc.radlaunch")} </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/XJ-GiPxUXP8"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="lighthouse">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.lighthouse")}
-                    </h2>
-                    <ul className="list-disc pl-4"></ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/3-HDUm70Cyk"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="tunel">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.tunel")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {" "}
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {" "}
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {" "}
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li> {t("misc.guns")} </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/EjElQZL25FI"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="silo">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.silo")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {" "}
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {" "}
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                      <li> {t("misc.guns")} </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/V-TY-4ywA9I"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="satelite">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.satelite")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {" "}
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad10")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/ri225udSk50"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="sewer">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.sewer")}
-                    </h2>
-                    <ul className=" pl-4">
-                      <li>
-                        {" "}
-                        {t("misc.green")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad10")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/zYErs-b0UGY"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
-              <div className="container mx-auto px-2 py-8" id="train">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <h2 className="text-3xl font-bold mb-4">
-                      {t("mname.train")}
-                    </h2>
-                    <ul className="pl-4">
-                      <li>
-                        {" "}
-                        {t("misc.green")} {t("misc.optional")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={green}
-                          alt="green"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.blue")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={blue}
-                          alt="blue"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.fuse")}{" "}
-                        <img
-                          className="inline-block w-6 h-6"
-                          src={fuse}
-                          alt="fuse"
-                        />
-                      </li>
-                      <li>
-                        {t("misc.rad")}{" "}
-                        <img
-                          className="inline-block w-4 h-4"
-                          src={rad}
-                          alt="rad"
-                        />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="w-full overflow-hidden rounded-lg shadow-lg">
-                    <div className="aspect-w-16 aspect-h-9">
-                      <iframe
-                        className="video-iframe w-full h-48"
-                        src="https://www.youtube.com/embed/3v89-1I0owo"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr className="flex-grow border-t-2 border-white pb-24" />
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white" />
+              <Monument
+                name={t("mname.harborl")}
+                url="https://www.youtube.com/embed/CmtOtDklnG4"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white" />
+              <Monument
+                id="airfield"
+                name={t("mname.airfield")}
+                url="https://www.youtube.com/embed/3v89-1I0owo"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
+
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="junkyard"
+                name={t("mname.junkyard")}
+                url="https://www.youtube.com/embed/V5eEgMLZiMs"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="launch"
+                name={t("mname.launch")}
+                url="https://www.youtube.com/embed/XJ-GiPxUXP8"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.red",
+                    img: red,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                  {
+                    name: "misc.radlaunch",
+                    img: rad,
+                  },
+                ]}
+              />
+
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="lighthouse"
+                name={t("mname.lighthouse")}
+                url="https://www.youtube.com/embed/3-HDUm70Cyk"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="tunel"
+                name={t("mname.tunel")}
+                url="https://www.youtube.com/embed/EjElQZL25FI"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.red",
+                    img: red,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
+              <Monument
+                id="silo"
+                name={t("mname.silo")}
+                url="https://www.youtube.com/embed/V-TY-4ywA9I"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="satelite"
+                name={t("mname.satelite")}
+                url="https://www.youtube.com/embed/ri225udSk50"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad10",
+                    img: rad,
+                  },
+                ]}
+              />
+
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="sewer"
+                name={t("mname.sewer")}
+                url="https://www.youtube.com/embed/zYErs-b0UGY"
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad10",
+                    img: rad,
+                  },
+                ]}
+              />
+
+              <hr className="flex-grow border-t-2 border-white " />
+              <Monument
+                id="train"
+                name={t("mname.train")}
+                url=""
+                requirements={[
+                  {
+                    name: "misc.green",
+                    img: green,
+                  },
+                  {
+                    name: "misc.blue",
+                    img: blue,
+                  },
+                  {
+                    name: "misc.fuse",
+                    img: fuse,
+                  },
+                  {
+                    name: "misc.rad",
+                    img: rad,
+                  },
+                ]}
+              />
             </div>
           </div>
         </main>

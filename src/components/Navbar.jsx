@@ -171,24 +171,34 @@ const Navbar = () => {
 
             {/* Menú desplegable para dispositivos móviles */}
             <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
-              <a
-                href="/decay"
+              <HashLink
+                smooth
+                to="/#decay"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Decay calculator
-              </a>
-              <a
-                href="/raid"
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#raid"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Raid table
-              </a>
-              <a
-                href="/gens"
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#breeder"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 genetic
-              </a>
+              </HashLink>
+              <HashLink
+                smooth
+                to="/#cameras"
+                className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Cameras
+              </HashLink>
               <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
                 <button
                   onClick={toggleDropdown}

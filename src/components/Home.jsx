@@ -55,11 +55,6 @@ export const Home = () => {
       <Navbar />
       <div className="flex flex-col pt-24 bg-gray-800 md:flex-row overflow-x-hidden">
         <div className="w-full bg-gray-800 order-last md:order-none">
-          <div className="flex justify-center items-center">
-            <a href="https://coin-birds.com/?en=Arastor99" target="_blank">
-              <img src={gif} alt="¡Ganancias cada 10 minutos!" />
-            </a>
-          </div>
           <div id="decay">
             <Tabla />
           </div>
