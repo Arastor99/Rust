@@ -4,16 +4,14 @@ export const Monument = ({ id, name, url, requirements }) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className="flex flex-col py-8 md:flex-row" id={id}>
-      <div className="md:w-4/12 self-center p-4 md:p-0">
-        <h2 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">
-          {t(name)}
-        </h2>
-        <ul className="pl-4 space-y-2">
+    <div className="flex flex-col md:flex-row py-16" id={id}>
+      <div className="md:w-4/12 self-center">
+        <h2 className="text-3xl font-bold mb-4">{t(name)}</h2>
+        <ul className="pl-4">
           {requirements.map((requirement) => (
-            <li className="flex items-center" key={requirement.name}>
+            <li className="flex items-center mb-2">
               <img
-                className="w-6 h-6 mr-2"
+                className="inline-block w-6 h-6 mr-2"
                 src={requirement.img}
                 alt={requirement.name}
               />
@@ -22,9 +20,9 @@ export const Monument = ({ id, name, url, requirements }) => {
           ))}
         </ul>
       </div>
-      <div className="w-full h-48 md:h-auto">
+      <div className="md:w-8/12 md:ml-8">
         <iframe
-          className="w-full h-full"
+          className="aspect-video max-w-xl w-full h-auto mx-auto md:mx-0"
           src={url}
           title="YouTube video player"
           frameBorder="0"

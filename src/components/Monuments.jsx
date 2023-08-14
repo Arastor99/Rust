@@ -320,7 +320,7 @@ export const Monuments = () => {
                   },
                 ]}
               />
-              <hr className="flex-grow border-t-2 border-white" />
+
               <Monument
                 name={t("mname.harborl")}
                 url="https://www.youtube.com/embed/CmtOtDklnG4"
@@ -446,6 +446,7 @@ export const Monuments = () => {
                   },
                 ]}
               />
+              <hr className="flex-grow border-t-2 border-white " />
               <Monument
                 id="silo"
                 name={t("mname.silo")}
