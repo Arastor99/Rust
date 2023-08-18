@@ -31,19 +31,7 @@ inject();
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <Helmet>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-QZ6Q78SEQK"
-      ></script>
-      <script>
-        {`
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QZ6Q78SEQK');
-    `}
-      </script>
+      <script defer src="https://overtracking.com/p/POVxcNKekQzZTgkN"></script>
     </Helmet>
 
     <I18nextProvider i18n={i18next}>

@@ -26,16 +26,9 @@ export const Info = () => {
 
         <main className="container mx-auto px-4 py-8">
           <div className="flex">
-            <div className="w-1/4 flex items-center justify-center">
-              <div id="ezoic-pub-ad-placeholder-105"> </div>
-            </div>
+            <div className="w-1/4 flex items-center justify-center"></div>
 
             <div className="flex-1 mx-2 lg:mx-4">
-              <div className="flex justify-center items-center pt-8">
-                <a href="https://coin-birds.com/?en=Arastor99" target="_blank">
-                  <img src={gif} alt="¡Ganancias cada 10 minutos!" />
-                </a>
-              </div>
               <h2 className="text-4xl font-bold my-4 text-center">
                 <a href="/decay" className="text-white hover:underline">
                   Decay Calculator
