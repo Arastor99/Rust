@@ -11,14 +11,6 @@ import gif from "../../public/static/resources/melee/gif.gif";
 export const Home = () => {
   const [domain, setDomain] = useState(window.location.hostname);
 
-  {
-    if (domain !== "rust-aio.com") {
-      setDomain("https://rust-aio.com");
-      console.log(domain);
-      window.location.replace("https://rust-aio.com");
-    }
-  }
-
   return (
     <>
       {/*
@@ -51,7 +43,9 @@ export const Home = () => {
         </aside>
       </div>
        */}
-
+      <Helmet>
+        <meta name="Index" content="Index of rust-aio" />
+      </Helmet>
       <Navbar />
       <div className="flex flex-col pt-24 bg-gray-800 md:flex-row overflow-x-hidden">
         <div className="w-full bg-gray-800 order-last md:order-none">

@@ -1,10 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 export const Privacy = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://rust-aio.com" />
+      </Helmet>
       <Navbar />
       <div className="flex justify-center py-36 min-h-screen bg-gray-800 ">
         <div className="max-w-2xl px-4">
