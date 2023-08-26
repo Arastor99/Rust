@@ -25,7 +25,7 @@ export default function Output() {
   )}
   <div
     style={{ height: 180, padding: '10px 15px', overflow: 'auto' }}
-    className="rounded-sm px-4 py-3 bg-gray-600 font-mono font-semibold text-center"
+    className="rounded-sm px-4 py-3 bg-[#474c4c] font-mono font-semibold text-center"
   >
     {outputs.map((value, index) => {
       return (

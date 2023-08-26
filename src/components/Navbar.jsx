@@ -53,7 +53,7 @@ const Navbar = () => {
     i18n.changeLanguage(defaultLanguage.value);
   }, []);
   return (
-    <nav className="bg-gray-900 rustFont fixed top-0 w-full z-50">
+    <nav className="bg-[#1a1c1f]  fixed top-0 w-full z-50 Roboto ">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -65,42 +65,36 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to="/#decay"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Decay calculator
+                Decay Calculator
               </HashLink>
               <HashLink
                 smooth
                 to="/#breeder"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                genetic
+                Genetic
               </HashLink>
               <HashLink
                 smooth
                 to="/#cameras"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
                 Cameras
               </HashLink>
               <HashLink
                 smooth
                 to="/#raid"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Raid table
+                Raid Table
               </HashLink>
 
-              <a
-                href="/info"
-                className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium "
-              >
-                How to use
-              </a>
               <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
                 <button
                   onClick={toggleDropdown}
-                  className="flex items-center focus:outline-none"
+                  className="flex items-center focus:outline-none text-base"
                 >
                   Monuments
                   <svg
@@ -117,13 +111,13 @@ const Navbar = () => {
                       href="/monuments"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Monuments puzzles
+                      Monuments Puzzles
                     </a>
                     <a
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Diesel locations
+                      Diesel Locations
                     </a>
                   </div>
                 )}

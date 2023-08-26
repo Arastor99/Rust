@@ -13,42 +13,12 @@ export const Home = () => {
 
   return (
     <>
-      {/*
-      
-
-      <div className="md:flex bg-gray-800">
-        <aside className="md:w-1/4 bg-gray-800 md:h-screen">
-          <div id="ezoic-pub-ad-placeholder-103"> </div>
-        </aside>
-
-        <div className="md:w-1/2">
-          <div id="decay">
-            <Tabla />
-          </div>
-
-          <div id="breeder">
-            <Breeder />
-          </div>
-
-          <div id="cameras" className="py-24 bg-gray-800">
-            <Cameras />
-          </div>
-          <div id="raid">
-            <Raid />
-          </div>
-        </div>
-
-        <aside className="md:w-1/4 bg-gray-800 md:h-screen">
-          <div id="ezoic-pub-ad-placeholder-104"> </div>
-        </aside>
-      </div>
-       */}
       <Helmet>
         <meta name="Index" content="Index of rust-aio" />
       </Helmet>
       <Navbar />
-      <div className="flex flex-col pt-24 bg-gray-800 md:flex-row overflow-x-hidden">
-        <div className="w-full bg-gray-800 order-last md:order-none">
+      <div className="flex flex-col pt-24 bg-[#0c0d0d] md:flex-row overflow-x-hidden">
+        <div className="w-full bg-[#0c0d0d]order-last md:order-none">
           <div id="decay">
             <Tabla />
           </div>

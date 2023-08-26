@@ -12,3 +12,25 @@
  .rustFont {
     font-family: "Rust";
    }
+
+   @font-face {
+    font-family: "Roboto-bold";
+    src: local("Roboto-Black"),
+     url("./fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: normal;
+    }
+  
+   .Roboto {
+      font-family: "Roboto";
+     }
+
+     @font-face {
+      font-family: "Roboto";
+      src: local("Roboto-Bold"),
+       url("./fonts/Roboto-Bold.ttf") format("truetype");
+      font-weight: bold;
+      }
+    
+     .Roboto-bold {
+        font-family: "Roboto-Bold";
+       }

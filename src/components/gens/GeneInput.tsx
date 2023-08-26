@@ -28,7 +28,7 @@ export default function GeneInput() {
   <input
     type="text"
     value={gene}
-    className="rounded-sm px-4 py-3 focus:outline-none bg-gray-700 text-gray-50 w-full"
+    className="rounded-sm px-4 py-3 focus:outline-none bg-[#474c4c] text-gray-50 w-full"
     placeholder="eg: XYYHGG"
     onChange={(e) => {
       let value = e.target.value.toUpperCase();

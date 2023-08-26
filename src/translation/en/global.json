@@ -90,7 +90,8 @@
         "train": "Train Yard",
         "oxum": "Oxum's Gas Station",
         "supermarket": "Supermarket",
-        "outpost": "Buy at Outpost"
+        "outpost": "Buy at Outpost",
+        "oilrigl": "Large Oilrig"
     },
 
     "misc": {

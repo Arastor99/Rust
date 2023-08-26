@@ -154,13 +154,13 @@ export const Tabla = () => {
       </Helmet>
       <div
         style={{
-          height: "100vh",
+          height: "90vh",
           backgroundSize: "cover",
         }}
-        className="rustFont bg-gray-800"
+        className="Roboto-bold bg-[#0c0d0d] text-white"
       >
         <div className="pt-24"></div>
-        <div className=" opacity-90 max-w-lg mx-auto bg-stone-400 p-8 rounded-xl shadow shadow-slate-300">
+        <div className=" opacity-90 max-w-lg mx-auto bg-[#232529] p-8 rounded-xl ">
           <br />
           <br />
           <h1 className="text-4xl font-medium font-face-r text-center">

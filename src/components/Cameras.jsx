@@ -2,11 +2,11 @@ import React from "react";
 
 export const Cameras = () => {
   return (
-    <div className="flex justify-center bg-gray-800">
+    <div className="flex justify-center bg-[gray-800] Roboto">
       <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl">
         <div className="relative overflow-x-auto">
           <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-[#3e4146] dark:text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3 text-center">
                   Location
@@ -17,7 +17,7 @@ export const Cameras = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -42,7 +42,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -61,7 +61,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700 ">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -87,7 +87,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -104,7 +104,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -122,7 +122,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -137,7 +137,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -151,7 +151,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
@@ -166,7 +166,7 @@ export const Cameras = () => {
                   </ul>
                 </td>
               </tr>
-              <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <tr className="bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700">
                 <th
                   scope="row"
                   className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"

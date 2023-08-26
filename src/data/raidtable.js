@@ -1351,7 +1351,7 @@ export const raidExplosive = [
     {
       id: 3,
       key: "stone",
-      text: "stone Build",
+      text: "Stone Build",
       img: "/static/resources/stone-wall.png",
       soft: true,
     },
@@ -1365,14 +1365,14 @@ export const raidExplosive = [
     {
       id: 5,
       key: "hq",
-      text: "HQ BUILD",
+      text: "HQ Build",
       img: "/static/resources/hq-wall.png",
       soft: true,
     },
     {
       id: 6,
       key: "wd",
-      text: "wood door",
+      text: "Wooden Door",
       img: "/static/resources/dw.png",
       soft: false,
     },

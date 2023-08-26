@@ -27,8 +27,8 @@ export const Monuments = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-900 text-white">
-        <header className="bg-gray-800 py-4">
+      <div className="bg-[#0C0D0D] text-white Roboto">
+        <header className="bg-[#0C0D0D] py-4">
           <nav className="container mx-auto flex justify-between items-center">
             <div>
               <h1 className="text-2xl font-bold">Monumentos</h1>
@@ -56,8 +56,8 @@ export const Monuments = () => {
         </header>
 
         <main className="container mx-auto py-8 text-center">
-          <div className="flex justify-center items-center bg-gray-900 pb-12">
-            <table className="bg-gray-800 text-white rounded-lg ">
+          <div className="flex justify-center items-center bg-[#0C0D0D] pb-12">
+            <table className="bg-[#0C0D0D] text-white rounded-lg ">
               <thead>
                 <tr>
                   <th className="px-4 py-2">{t("misc.color")}</th>
@@ -110,7 +110,7 @@ export const Monuments = () => {
           <section>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               <HashLink smooth to="#water">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={water}
                     alt="Monumento 1"
@@ -122,7 +122,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#power">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={power}
                     alt="Monumento 2"
@@ -134,7 +134,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#harbora">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={harbor}
                     alt="Monumento 2"
@@ -146,7 +146,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#airfield">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={airfield}
                     alt="Monumento 2"
@@ -158,7 +158,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#junkyard">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={junkyard}
                     alt="Monumento 2"
@@ -170,7 +170,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#launch">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={launch}
                     alt="Monumento 2"
@@ -182,7 +182,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#lighthouse">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={lighthouse}
                     alt="Monumento 2"
@@ -194,7 +194,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#tunel">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={tunel}
                     alt="Monumento 2"
@@ -206,7 +206,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#silo">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={silo}
                     alt="Monumento 2"
@@ -218,7 +218,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#satelite">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={satelite}
                     alt="Monumento 2"
@@ -230,7 +230,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#sewer">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={sewer}
                     alt="Monumento 2"
@@ -242,7 +242,7 @@ export const Monuments = () => {
                 </div>
               </HashLink>
               <HashLink smooth to="#train">
-                <div className="bg-gray-800 p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
+                <div className="bg-[#222121] p-4 rounded-lg hover:scale-110 transform transition-transform duration-300">
                   <img
                     src={train}
                     alt="Monumento 2"
@@ -255,7 +255,7 @@ export const Monuments = () => {
               </HashLink>
             </div>
           </section>
-          <div className="flex justify-center items-center bg-gray-900">
+          <div className="flex justify-center items-center bg-[#0C0D0D]">
             <div className="max-w-6xl">
               <h1 className="text-4xl font-bold text-white mb-8 mt-24">
                 Monumentos

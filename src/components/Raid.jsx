@@ -77,8 +77,8 @@ export const Raid = () => {
         `}
       </style>
 
-      <div className=" min-h-screen ">
-        <div className="bg-gray-800 text-white  flex justify-center rustFont">
+      <div className=" min-h-screen-bold Roboto-bold ">
+        <div className="bg-#0C0D0D text-white  flex justify-center ">
           <div className="p-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {content.map((item) => (
@@ -86,8 +86,8 @@ export const Raid = () => {
                   key={item.id}
                   data-key={"_".concat(item.key)}
                   onClick={handleOnClick}
-                  className={`flex items-center justify-center p-2 border border-gray-800 rounded-lg cursor-pointer hover:bg-gray-600 ${
-                    selectedItem === "_".concat(item.key) ? "bg-gray-600" : ""
+                  className={`flex items-center justify-center p-2  rounded-lg cursor-pointer hover:bg-[#1A1C1F] ${
+                    selectedItem === "_".concat(item.key) ? "bg-gray-700" : ""
                   }`}
                 >
                   <img src={item.img} alt="Imagen" className="w-8 h-8 mr-2" />
@@ -97,9 +97,9 @@ export const Raid = () => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-800 min-h-full  5 pt-12">
-          <div className="relative overflow-x-auto mx-auto max-w-4xl font-sans bg-gray-500 overflow-y-hidden">
-            <div className="flex items-center space-x-12 my-6 ml-8 justify-center  text-base rustFont">
+        <div className="bg-[#0C0D0D] min-h-full  5 pt-12">
+          <div className="relative overflow-x-auto mx-auto max-w-4xl  bg-[#1A1C1F] overflow-y-hidden">
+            <div className="flex items-center space-x-12 my-6 ml-8 justify-center Roboto-bold text-lg font-bold">
               <label
                 htmlFor="melee"
                 className="flex items-center cursor-pointer"
@@ -118,7 +118,7 @@ export const Raid = () => {
                     } rounded-md`}
                   ></div>
                 </div>
-                <span className="ml-2 text-gray-800">Melee</span>
+                <span className="ml-2 text-white">Melee</span>
               </label>
               <label
                 htmlFor="explosives"
@@ -138,11 +138,11 @@ export const Raid = () => {
                     } rounded-md`}
                   ></div>
                 </div>
-                <span className="ml-2 text-gray-800">Explosives</span>
+                <span className="ml-2 text-white">Explosives</span>
               </label>
             </div>
             <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center">
+              <thead className="text-xs text-gray-700 uppercase bg-[#3E4146] dark:[#3E4146] dark:text-gray-400 text-center">
                 <tr>
                   <th scope="col" className="px-6 py-3 text-base">
                     Tool
@@ -170,7 +170,7 @@ export const Raid = () => {
                     className={
                       item.type === "melee"
                         ? "hide-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center"
-                        : "bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center"
+                        : "bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700 text-center"
                     }
                   >
                     <td className="px-6 py-4">
@@ -180,7 +180,9 @@ export const Raid = () => {
                           alt="Imagen"
                           className="w-8 h-8 mr-6"
                         />
-                        <span className="font-bold text-lg">{item.text}</span>
+                        <span className="font-bold text-lg Roboto-bold">
+                          {item.text}
+                        </span>
                       </div>
                     </td>
                     <td className="px-6 py-4">

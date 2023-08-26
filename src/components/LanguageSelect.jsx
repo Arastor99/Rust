@@ -13,7 +13,7 @@ const LanguageSelect = ({ lang, language, setLanguage, i18n }) => {
     <div className="relative">
       <Listbox value={language} onChange={handleChange}>
         <div className="relative mt-1 z-10">
-          <Listbox.Button className="relative z-10 cursor-default rounded-lg bg-gray-900 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+          <Listbox.Button className="relative z-10 cursor-default rounded-lg bg-[#1a1c1f] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
             <div className="space-x-3 items-center flex ">
               <div>{language.img}</div>{" "}
               <div className="text-stone-300">{language.name}</div>

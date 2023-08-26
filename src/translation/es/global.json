@@ -10,7 +10,7 @@
         "dq": "Puerta blindada"
     },
     "messages": {
-        "title": "Calculadora de decay rust",
+        "title": "Calculadora de Decay Rust",
         "info1": "Elije los materiales para calcular el tiempo restante",
         "info2": "Tipo de material",
         "info3": "Vida de la estructura",
@@ -89,7 +89,8 @@
         "train": "Patio Ferroviario",
         "oxum": "Gasolinera Oxum",
         "supermarket": "Supermercado",
-        "outpost": "Comprandola en Ruinas"
+        "outpost": "Comprandola en Ruinas",
+        "oilrigl": "Planta petrolifera grande"
     },
     "misc": {
         "green": "Tarjeta Verde",
