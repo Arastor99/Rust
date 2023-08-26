@@ -183,13 +183,13 @@ export const Tabla = () => {
                 {t("messages.info3")}
               </p>
               <input
-                className="font-sans w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow"
+                className="Roboto w-full py-3 border border-slate-200 rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow text-black"
                 type="number"
                 ref={vida}
               />
             </label>
             <div
-              className="font-sans font-bold text-xl w-full text-center"
+              className="Roboto font-bold text-xl w-full text-center"
               id="tiempo"
             >
               {tiempo}
