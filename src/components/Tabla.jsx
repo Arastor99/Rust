@@ -5,6 +5,7 @@ import Select from "./Select";
 import { useTranslation } from "react-i18next";
 import LanguageSelect from "./LanguageSelect";
 import { Helmet } from "react-helmet";
+import { secondsToHHMMSS } from "../functions/decimalToString";
 
 //images
 import image from "../../public/static/resources/bg.jpg";
@@ -18,6 +19,7 @@ import dg from "/static/resources/dg.png";
 import dq from "/static/resources/dq.png";
 import en from "/static/resources/uk.png";
 import es from "/static/resources/spain.png";
+import logo from "/static/resources/rust-logo.png";
 
 export const Tabla = () => {
   const { t, i18n } = useTranslation();
@@ -100,8 +102,7 @@ export const Tabla = () => {
     switch (resource) {
       case "wood":
         vidaTotal = 250;
-        setTiempo(decimal2HHMISS((vidaRestante * 3) / vidaTotal));
-        console.log(tiempo);
+        setTiempo(secondsToHHMMSS(((vidaRestante * 3) / vidaTotal) * 3600));
         break;
 
       case "stone":
@@ -161,9 +162,8 @@ export const Tabla = () => {
       >
         <div className="pt-24"></div>
         <div className=" opacity-90 max-w-lg mx-auto bg-[#232529] p-8 rounded-xl ">
-          <br />
-          <br />
-          <h1 className="text-4xl font-medium font-face-r text-center">
+          <img src={logo} alt="" />
+          <h1 className="text-4xl font-medium font-face-r text-center pb-8">
             {t("messages.title")}
           </h1>
           <p className="text-slate-500">{t("messages.info1")}</p>

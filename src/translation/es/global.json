@@ -106,5 +106,12 @@
         "color": "Color de Tarjeta",
         "find": "Donde encontrarla"
 
+    },
+
+    "time":{
+        "hour": "hora",
+        "hours": "horas",
+        "second": "segundo",
+        "seconds": "segundos"
     }
 }

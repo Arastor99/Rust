@@ -169,7 +169,7 @@ export const Raid = () => {
                     typedata={item.type}
                     className={
                       item.type === "melee"
-                        ? "hide-row bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center"
+                        ? "hide-row bg-white border-b dark:bg-[#272a2e] dark:border-gray-700 text-center"
                         : "bg-white border-b dark:bg-[#1A1C1F] dark:border-gray-700 text-center"
                     }
                   >
