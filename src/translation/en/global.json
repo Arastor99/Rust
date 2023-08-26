@@ -99,6 +99,7 @@
         "blue": "Blue Keycard",
         "red": "Red Keycard",
         "rad": "25 rad protection",
+        "rad27": "27 rad protection from the middle of the tunnel",
         "rad10": "10 rad protection",
         "radlaunch": "Behind red keycard requires Rad suit and water",
         "monument": "Monuments",
@@ -108,6 +109,13 @@
         "color": "Keycard color",
         "find": "Where to find"
 
+    },
+
+    "time":{
+        "hour": "hour",
+        "hours": "hours",
+        "second": "second",
+        "seconds": "seconds"
     }
 
     

@@ -444,6 +444,10 @@ export const Monuments = () => {
                     name: "misc.rad",
                     img: rad,
                   },
+                  {
+                    name: "misc.rad27",
+                    img: rad,
+                  },
                 ]}
               />
               <hr className="flex-grow border-t-2 border-white " />

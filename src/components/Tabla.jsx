@@ -166,10 +166,10 @@ export const Tabla = () => {
           <h1 className="text-4xl font-medium font-face-r text-center pb-8">
             {t("messages.title")}
           </h1>
-          <p className="text-slate-500">{t("messages.info1")}</p>
-          <div className="flex flex-col space-y-5">
+
+          <div className="flex flex-col space-y-5 pb-4">
             <label htmlFor="material">
-              <p className="font-medium text-slate-700 pb-2">
+              <p className="font-medium text-gray-400 pb-2">
                 {t("messages.info2")}
               </p>
               <Select
@@ -179,7 +179,7 @@ export const Tabla = () => {
               />
             </label>
             <label htmlFor="estructura">
-              <p className="font-medium text-slate-700 pb-2">
+              <p className="font-medium text-gray-400 pb-2">
                 {t("messages.info3")}
               </p>
               <input
