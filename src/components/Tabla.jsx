@@ -107,37 +107,37 @@ export const Tabla = () => {
 
       case "stone":
         vidaTotal = 500;
-        setTiempo(decimal2HHMISS((vidaRestante * 5) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 5) / vidaTotal) * 3600));
         break;
 
       case "metal":
         vidaTotal = 1000;
-        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 8) / vidaTotal) * 3600));
         break;
 
       case "hq":
         vidaTotal = 2000;
-        setTiempo(decimal2HHMISS((vidaRestante * 12) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 12) / vidaTotal) * 3600));
         break;
 
       case "dw":
         vidaTotal = 200;
-        setTiempo(decimal2HHMISS((vidaRestante * 3) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 3) / vidaTotal) * 3600));
         break;
 
       case "dm":
         vidaTotal = 250;
-        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 8) / vidaTotal) * 3600));
         break;
 
       case "dg":
         vidaTotal = 600;
-        setTiempo(decimal2HHMISS((vidaRestante * 8) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 8) / vidaTotal) * 3600));
         break;
 
       case "dq":
         vidaTotal = 1000;
-        setTiempo(decimal2HHMISS((vidaRestante * 12) / vidaTotal));
+        setTiempo(secondsToHHMMSS(((vidaRestante * 12) / vidaTotal) * 3600));
         break;
       default:
         break;
