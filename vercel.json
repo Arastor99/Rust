@@ -4,6 +4,7 @@
       { "src": "/info", "dest": "/" },
       { "src": "/Privacy", "dest": "/" },
       { "src": "/monuments", "dest": "/" },
-      { "src": "/diesel", "dest": "/" }
+      { "src": "/diesel", "dest": "/" },
+      { "src": "/testingindex", "dest": "/" }
     ]
   }

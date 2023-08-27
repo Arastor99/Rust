@@ -8,6 +8,7 @@ import { Info } from "./Info";
 import { Privacy } from "./Privacy";
 import { Monuments } from "./Monuments";
 import { Diesel } from "./Diesel";
+import { Test } from "./Test";
 
 export const Rutas = () => {
   return (
@@ -17,6 +18,7 @@ export const Rutas = () => {
       <Route path="/privacy" element={<Privacy />}></Route>
       <Route path="/monuments" element={<Monuments />}></Route>
       <Route path="/diesel" element={<Diesel />}></Route>
+      <Route path="/testingindex" element={<Test />}></Route>
     </Routes>
   );
 };
