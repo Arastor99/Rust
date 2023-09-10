@@ -197,7 +197,14 @@ const Navbar = () => {
                 to="/cameras"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Cameras
+                {t("navbar.cameras")}
+              </HashLink>
+              <HashLink
+                smooth
+                to="/statistics"
+                className="block text-blue-600 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                {t("navbar.statistics")}
               </HashLink>
               <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
                 <button
