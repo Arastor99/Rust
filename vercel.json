@@ -1,10 +1,16 @@
 {
-    "routes": [
-      { "src": "/", "dest": "/" },
-      { "src": "/info", "dest": "/" },
-      { "src": "/Privacy", "dest": "/" },
-      { "src": "/monuments", "dest": "/" },
-      { "src": "/diesel", "dest": "/" },
-      { "src": "/testingindex", "dest": "/" }
-    ]
-  }
+  "routes": [
+    { "src": "/", "dest": "/" },
+    { "src": "/info", "dest": "/" },
+    { "src": "/Privacy", "dest": "/" },
+    { "src": "/monuments", "dest": "/" },
+    { "src": "/diesel", "dest": "/" },
+    { "src": "/testingindex", "dest": "/" },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    }
+  ]
+}
