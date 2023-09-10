@@ -2,7 +2,7 @@
 const API_KEY = import.meta.env.VITE_STEAM_API_KEY;
 
 export const getPlayerGeneral = async (steamId) => {
-  const url = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${API_KEY}&steamids=${steamId}`;
+  const url = `https://corsproxy.io/?https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${API_KEY}&steamids=${steamId}`;
   try {
     const response = await fetch(url, {
       method: "GET",
@@ -33,7 +33,7 @@ export const getPlayerGeneral = async (steamId) => {
 // Función para obtener las estadísticas de un jugador en Rust
 
 export const getPlayerStats = async (steamId) => {
-  const url = `https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?appid=252490&key=${API_KEY}&steamid=${steamId}`;
+  const url = `https://corsproxy.io/?https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?appid=252490&key=${API_KEY}&steamid=${steamId}`;
 
   try {
     const response = await fetch(url, {
@@ -61,7 +61,7 @@ export const getPlayerStats = async (steamId) => {
 };
 
 export const getHoursPlayed = async (steamId) => {
-  const url = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${API_KEY}&steamid=${steamId}&include_appinfo=1`;
+  const url = `https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${API_KEY}&steamid=${steamId}&include_appinfo=1`;
 
   try {
     const response = await fetch(url, {
