@@ -11,68 +11,67 @@
     },
     "messages": {
         "title": "Calculadora de Decay Rust",
-        "info1": "Elije los materiales para calcular el tiempo restante",
+        "info1": "Elige los materiales para calcular el tiempo restante",
         "info2": "Tipo de material",
         "info3": "Vida de la estructura",
         "info4": "Calcular",
-        "info5": "Considere que el tiempo de decay va desde fuera hacia dentro, es decir, cuanto mas lejos este del TC (armario) antes caera esa estructura, por lo que es un tiempo aproximado"
+        "info5": "Considera que el tiempo de decay va desde afuera hacia adentro, es decir, cuanto más lejos esté del TC (armario), antes caerá esa estructura, por lo que es un tiempo aproximado"
     },
-    "home":{
-        "decay": "Elije el tipo de material y la vida restante, la calculadora te dara un tiempo bastante aproximado de cuando la estructura se caera.",
-        "raid": "Elije el tipo de estructura y podras ver cuanto te costara destruirla dependiendo del arma/explosivo.",
-        "add-genes": "Añadir Genes: ",
+    "home": {
+        "decay": "Elige el tipo de material y la vida restante. La calculadora te dará un tiempo bastante aproximado de cuándo la estructura se caerá.",
+        "raid": "Elige el tipo de estructura y podrás ver cuánto te costará destruirla según el arma/explosivo.",
+        "add-genes": "Añadir Genes:",
         "add-genes-message": "Introduce los genes que tengas.",
-        "target": "Objetivo: ",
-        "target-message": "El objetivo de tu genetica, introduce el que prefieras (el orden no importa) y la calculadora se encargara de darte el resultado mas parecido posible con las geneticas que has introducido.",
-        "available-genetics": "Genetica disponible: ",
+        "target": "Objetivo:",
+        "target-message": "El objetivo de tu genética. Introduce el que prefieras (el orden no importa) y la calculadora se encargará de darte el resultado más parecido posible con las genéticas que has introducido.",
+        "available-genetics": "Genética disponible:",
         "available-genetics-message": "La lista de tus genes introducidos.",
-        "breeding-genetics": "Cruze de plantas: ",
-        "breeding-genetics-message": "Los genes que tienes que mezclar para obtener el resultado indicado abajo, recomiendo usar como planta receptora aquella que tenga mas G.",
-        "result": "Resultado: ",
-        "result-message": "El resultado que obtendras, si obtienes mas de un resultado significa que hay 50% de probabilidades en algunas columnas."
+        "breeding-genetics": "Cruce de plantas:",
+        "breeding-genetics-message": "Los genes que debes mezclar para obtener el resultado indicado abajo. Recomiendo usar como planta receptora aquella que tenga más G.",
+        "result": "Resultado:",
+        "result-message": "El resultado que obtendrás. Si obtienes más de un resultado, significa que hay un 50% de probabilidades en algunas columnas."
     },
-    "raid":{
-        "twig":"ESTRUCUTRA DE PAJA",
-        "wood":"ESTRUCTURA DE MADERA",
-        "stone":"ESTRUCTURA DE PIEDRA",
-        "metal":"ESTRUCTURA DE METAL",
-        "hq":"ESTRUCTURA DE HQ",
-        "wood-door":"PUERTA DE MADERA",
-        "metal-door":"PUERTA DE METAL",
-        "garage-door":"PUERTA DE GARAJE",
-        "armored-door":"PUERTA BLINDADA",
-        "ladder-hatch":"TRAMPILLA",
-        "wooden-wall":"MURO DE MADERA",
-        "stone-wall":"MURO DE PIEDRA"
+    "raid": {
+        "twig": "ESTRUCTURA DE PAJA",
+        "wood": "ESTRUCTURA DE MADERA",
+        "stone": "ESTRUCTURA DE PIEDRA",
+        "metal": "ESTRUCTURA DE METAL",
+        "hq": "ESTRUCTURA DE HQ",
+        "wood-door": "PUERTA DE MADERA",
+        "metal-door": "PUERTA DE METAL",
+        "garage-door": "PUERTA DE GARAJE",
+        "armored-door": "PUERTA BLINDADA",
+        "ladder-hatch": "TRAMPILLA",
+        "wooden-wall": "MURO DE MADERA",
+        "stone-wall": "MURO DE PIEDRA"
     },
-    "crossbreeding":{
+    "crossbreeding": {
         "add-genes": "Añadir gen",
         "target": "Objetivo",
         "available-genetics": "Lista de genes",
-        "breeding-genetics": "Cruze de plantas",
+        "breeding-genetics": "Cruce de plantas",
         "result": "Resultado",
         "insert": "Insertar",
-        "target-info": "Introduce la genetica deseada por ejemplo: YYYGGG (Que es lo mimso que YGGYGY), el orden no importa.",
-        "result-info": "Si hay mas de un resultado significa que en algunas columnas tienes 50% de posibilidades."
+        "target-info": "Introduce la genética deseada, por ejemplo: YYYGGG (que es lo mismo que YGGYGY), el orden no importa.",
+        "result-info": "Si hay más de un resultado, significa que en algunas columnas tienes un 50% de posibilidades."
     },
     "policy": {
         "privacy": "Política de Privacidad",
-        "text-privacy":" Agradecemos su interés en nuestra página web dedicada a proporcionar información sobre Rust. La privacidad y la seguridad de sus datos personales son de suma importancia para nosotros. A continuación, le presentamos nuestra política de privacidad, que describe cómo recopilamos, utilizamos y protegemos la información que usted nos proporciona mientras utiliza nuestra página web.",
+        "text-privacy": "Agradecemos su interés en nuestra página web dedicada a proporcionar información sobre Rust. La privacidad y la seguridad de sus datos personales son de suma importancia para nosotros. A continuación, le presentamos nuestra política de privacidad, que describe cómo recopilamos, utilizamos y protegemos la información que usted nos proporciona mientras utiliza nuestra página web.",
         "info": "Recopilación de información",
         "text-info": "Nuestra página web está diseñada para brindar información sobre Rust, y no requerimos que los usuarios introduzcan datos personales para utilizar nuestras herramientas o acceder a la información proporcionada. Sin embargo, es posible que recopilemos información no personal y anónima automáticamente a través de tecnologías como cookies y registros de servidores. Estos datos se utilizan para mejorar la funcionalidad y el rendimiento de nuestra página web, y no se pueden utilizar para identificarlo personalmente.",
         "use": "Uso de la información",
-        "text-use":"La información no personal recopilada automáticamente se utiliza para mejorar su experiencia en nuestra página web, analizar tendencias y recopilar datos demográficos. No compartiremos esta información con terceros sin su consentimiento explícito.",
+        "text-use": "La información no personal recopilada automáticamente se utiliza para mejorar su experiencia en nuestra página web, analizar tendencias y recopilar datos demográficos. No compartiremos esta información con terceros sin su consentimiento explícito.",
         "security": "Seguridad de la información",
-        "text-security":"Nos comprometemos a proteger la información que recopilamos. Implementamos medidas de seguridad adecuadas para proteger sus datos contra accesos no autorizados, modificaciones, divulgaciones o destrucción.",
+        "text-security": "Nos comprometemos a proteger la información que recopilamos. Implementamos medidas de seguridad adecuadas para proteger sus datos contra accesos no autorizados, modificaciones, divulgaciones o destrucción.",
         "external": "Enlaces externos",
         "text-external": "Nuestra página web puede contener enlaces a sitios web externos que no están bajo nuestro control. No nos hacemos responsables de las prácticas de privacidad o del contenido de dichos sitios web. Le recomendamos que revise las políticas de privacidad de cualquier sitio web al que acceda desde nuestra página.",
         "change": "Cambios en la política de privacidad",
-        "text-change":"Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio realizado se publicará en esta página con una fecha de entrada en vigor actualizada. Le recomendamos que revise periódicamente esta política para estar al tanto de cualquier cambio.",
+        "text-change": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier cambio realizado se publicará en esta página con una fecha de entrada en vigor actualizada. Le recomendamos que revise periódicamente esta política para estar al tanto de cualquier cambio.",
         "contact": "Contáctenos",
-        "text-contact": "Si tiene alguna pregunta o inquietud acerca de nuestra política de privacidad, o si desea ejercer sus derechos en relación con sus datos personales, por favor contáctenos a través de el siguiente email: alvarito19992009@hotmail.com. Gracias por confiar en nosotros y utilizar nuestra página web para obtener información sobre el videojuego."
-
+        "text-contact": "Si tiene alguna pregunta o inquietud acerca de nuestra política de privacidad, o si desea ejercer sus derechos en relación con sus datos personales, por favor contáctenos a través del siguiente correo electrónico: alvarito19992009@hotmail.com. Gracias por confiar en nosotros y utilizar nuestra página web para obtener información sobre el videojuego."
     },
-    "mname":{
+    "mname": {
         "water": "Planta Potabilizadora",
         "power": "Central Nuclear",
         "harbor": "Puerto",
@@ -82,37 +81,131 @@
         "junkyard": "Vertedero",
         "launch": "Estación de Lanzamiento",
         "lighthouse": "Faro",
-        "tunel": "Tunel Militar",
+        "tunnel": "Túnel Militar",
         "silo": "Silo Misilístico",
-        "satelite": "Satelite",
+        "satellite": "Satélite",
         "sewer": "Rama de Alcantarillados",
         "train": "Patio Ferroviario",
         "oxum": "Gasolinera Oxum",
         "supermarket": "Supermercado",
-        "outpost": "Comprandola en Ruinas",
-        "oilrigl": "Planta petrolifera grande"
+        "outpost": "Comprándola en Ruinas",
+        "oilrigl": "Planta petrolífera grande"
     },
     "misc": {
         "green": "Tarjeta Verde",
         "blue": "Tarjeta Azul",
         "red": "Tarjeta Roja",
-        "rad": "25 de protección de rad",
-        "rad27": "27 de protección de rad a la mitad del tunel",
-        "rad10": "10 de protección de rad",
-        "radlaunch": "Detras de tarjeta roja necesitaras un traje de rad y agua",
+        "rad": "25 de protección de radiación",
+        "rad27": "27 de protección de radiación a la mitad del túnel",
+        "rad10": "10 de protección de radiación",
+        "radlaunch": "Detrás de la tarjeta roja necesitarás un traje de radiación y agua",
         "monument": "Monumentos",
         "fuse": "Fusible Eléctrico",
-        "guns": "Armas para eliminar a los NPC's",
+        "guns": "Armas para eliminar a los NPC",
         "optional": "(opcional)",
         "color": "Color de Tarjeta",
-        "find": "Donde encontrarla"
-
+        "find": "Dónde encontrarla"
     },
 
-    "time":{
+    "time": {
         "hour": "hora",
         "hours": "horas",
         "second": "segundo",
         "seconds": "segundos"
+    },
+    "navbar": {
+        "decay": "Calculadora de Decay",
+        "raid": "Tabla de Raideo",
+        "genetic": "Genética",
+        "cameras": "Cámaras",
+        "statistics": "Estadísticas",
+        "monuments": "Monumentos",
+        "puzzles": "Puzzles de Monumentos",
+        "diesel": "Localización de Diesel",
+        "privacy": "Privacidad y Contacto"
+    },
+    "statistics": {
+        "input": "Busca un jugador (Steam ID / Enlace al Perfil de Steam / URL Personalizada de Steam)",
+        "text": "Comprueba cuánto has arruinado tu vida"
+    },
+    "stats": {
+        "pvp": {
+            "kills": "Muertes",
+            "deaths": "Muertes",
+            "headshots": "Tiros a la cabeza",
+            "balas-impactadas": "Balas impactadas",
+            "balas-disparadas": "Balas disparadas",
+            "porcentaje-impacto-de-bala": "% de impacto de balas",
+            "porcentaje-disparo-a-la-cabeza": "% de tiros a la cabeza"
+        },
+        "muertes": {
+            "científicos": "Científicos",
+            "jabalíes": "Jabalíes",
+            "osos": "Osos",
+            "lobos": "Lobos",
+            "gallinas": "Gallinas",
+            "ciervos": "Ciervos",
+            "caballos": "Caballos"
+        },
+        "impactos-con-arco": {
+            "disparos-realizados": "Disparos realizados",
+            "jugadores": "Jugadores",
+            "construcciones": "Construcciones"
+        },
+        "exposición": {
+            "frío": "Frío",
+            "calor": "Calor",
+            "comfort": "Comodidad",
+            "radiación": "Radiación"
+        },
+        "recolectado": {
+            "madera": "Madera",
+            "piedra": "Piedra",
+            "metal": "Metal",
+            "chatarra": "Chatarra",
+            "tela": "Tela",
+            "cuero": "Cuero",
+            "combustible": "Combustible"
+        },
+        "otros": {
+            "chat-de-voz": "Chat de voz",
+            "barriles-destruidos": "Barriles destruidos",
+            "cohetes-disparados": "Cohetes disparados",
+            "inventario-abierto": "Inventario abierto",
+            "mapa-abierto": "Mapa abierto",
+            "tumbado-herido": "Tumbado herido",
+            "recetas-aprendidas": "Recetas aprendidas",
+            "usuario-no-encontrado": "Usuario no encontrado"
+        },
+        "títulos": {
+            "impactos-con-arco": "Impactos con arco",
+            "impactos-con-escopeta": "Impactos con escopeta",
+            "recolectado": "Recolectado",
+            "otros": "Otros",
+            "exposición": "Exposición a (Horas)",
+            "horas": "Horas"
+        }
+    },
+        
+
+    "index":{
+        "decay-title": "Calculadora de Decay",
+        "decay-info": "Calcula el tiempo restante de una construcción en decay y récolectala primero",
+        "raid-title": "Tabla de Raideo",
+        "raid-info": "Comprueba cuánto necesitas para raidear y optimiza el gasto de recursos",
+        "stats-title": "Estadísticas",
+        "stats-info": "Comprueba tus estadísticas generales en los servidores oficiales",
+        "cameras-title": "Cámaras",
+        "cameras-info": "Obtén los códigos de las cámaras CCTV para usarlos en la mesa de ordenador",
+        "monuments-title": "Puzzles de Monumentos",
+        "monuments-info": "Aprende a obtener las tarjetas llave de los monumentos: verde, azul y roja",
+        "diesel-title": "Localizaciones de Diesel",
+        "diesel-info": "Encuentra barriles de diesel para obtener recursos y úsalo en la excavadora y la cantera",
+        "genetics-title": "Genéticas",
+        "genetics-info": "Crea la mejor genética de plantas para tu huerto y obtén la genética perfecta"
+    },
+    "input":{
+        "search": "Busca un jugador (Steam ID / Link del Perfil de Steam / URL Personalizado de Steam)",
+        "ruined": "Mira cuánto has arruinado tu vida."
     }
 }

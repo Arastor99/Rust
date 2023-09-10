@@ -76,11 +76,11 @@ export const Raid = () => {
           }
         `}
       </style>
-
-      <div className=" min-h-screen-bold Roboto-bold ">
-        <div className="bg-#0C0D0D text-white  flex justify-center ">
+      <Navbar />
+      <div className=" min-h-screen Roboto-bold ">
+        <div className="bg-[#0C0D0D] text-white  flex justify-center ">
           <div className="p-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-32">
               {content.map((item) => (
                 <div
                   key={item.id}
@@ -97,7 +97,7 @@ export const Raid = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#0C0D0D] min-h-full  5 pt-12">
+        <div className="bg-[#0C0D0D] min-h-screen  5 pt-12">
           <div className="relative overflow-x-auto mx-auto max-w-4xl  bg-[#1A1C1F] overflow-y-hidden">
             <div className="flex items-center space-x-12 my-6 ml-8 justify-center Roboto-bold text-lg font-bold">
               <label

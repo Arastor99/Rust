@@ -11,13 +11,7 @@ export const Info = () => {
 
   return (
     <>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
+      <Helmet></Helmet>
       <Navbar />
       <div className="bg-gray-800 text-white min-h-screen">
         <header className="bg-gray-800 py-4">

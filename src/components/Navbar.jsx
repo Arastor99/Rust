@@ -64,31 +64,37 @@ const Navbar = () => {
             <div className="hidden md:flex md:space-x-4 ml-4">
               <HashLink
                 smooth
-                to="/#decay"
+                to="/decay"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Decay Calculator
+                {t("navbar.decay")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#breeder"
+                to="/breeder"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Genetic
+                {t("navbar.genetic")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#cameras"
+                to="/cameras"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Cameras
+                {t("navbar.cameras")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#raid"
+                to="/raidtable"
                 className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
               >
-                Raid Table
+                {t("navbar.raid")}
+              </HashLink>
+              <HashLink
+                to="/statistics"
+                className="text-blue-600 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
+              >
+                {t("navbar.statistics")}
               </HashLink>
 
               <div className="relative text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium">
@@ -96,7 +102,7 @@ const Navbar = () => {
                   onClick={toggleDropdown}
                   className="flex items-center focus:outline-none text-base"
                 >
-                  Monuments
+                  {t("navbar.monuments")}
                   <svg
                     className="w-4 h-4 ml-1"
                     viewBox="0 0 20 20"
@@ -111,13 +117,13 @@ const Navbar = () => {
                       href="/monuments"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Monuments Puzzles
+                      {t("navbar.puzzles")}
                     </a>
                     <a
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Diesel Locations
+                      {t("navbar.diesel")}
                     </a>
                   </div>
                 )}
@@ -136,7 +142,7 @@ const Navbar = () => {
             <div className="text-gray-300 text-xs font-sans pl-12 font-semibold">
               <ul>
                 <li className="hover:text-white">
-                  <a href="/privacy">Privacy and Contact</a>
+                  <a href="/privacy">{t("navbar.privacy")}</a>
                 </li>
               </ul>
             </div>
@@ -167,28 +173,28 @@ const Navbar = () => {
             <div className={`md:hidden ${isMenuOpen ? "block" : "hidden"}`}>
               <HashLink
                 smooth
-                to="/#decay"
+                to="/decay"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Decay calculator
+                {t("navbar.decay")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#raid"
+                to="/raidtable"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Raid table
+                {t("navbar.raid")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#breeder"
+                to="/breeder"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
-                genetic
+                {t("navbar.genetic")}
               </HashLink>
               <HashLink
                 smooth
-                to="/#cameras"
+                to="/cameras"
                 className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Cameras
@@ -198,7 +204,7 @@ const Navbar = () => {
                   onClick={toggleDropdown}
                   className="flex items-center focus:outline-none"
                 >
-                  Monuments
+                  {t("navbar.monuments")}
                   <svg
                     className="w-4 h-4 ml-1"
                     viewBox="0 0 20 20"
@@ -213,13 +219,13 @@ const Navbar = () => {
                       href="/monuments"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Monuments puzzles
+                      {t("navbar.puzzles")}
                     </a>
                     <a
                       href="#"
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
-                      Diesel locations
+                      {t("navbar.diesel")}
                     </a>
                   </div>
                 )}

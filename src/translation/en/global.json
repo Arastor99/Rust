@@ -116,6 +116,103 @@
         "hours": "hours",
         "second": "second",
         "seconds": "seconds"
+    },
+
+    "navbar":{
+        "decay": "Decay Calculator",
+        "raid": "Raid Table",
+        "genetic": "Genetic",
+        "cameras": "Cameras",
+        "statistics": "Statistics",
+        "monuments": "Monuments",
+        "puzzles": "Monuments Puzzles",
+        "diesel": "Diesel Location",
+        "privacy": "Privacy and Contact"
+    },
+
+    "statistics":{
+        "input": "Search for a player (Steam ID / Steam Profile Link / Custom Steam URL)",
+        "text": "See how much you have ruined your life"
+    },
+
+    "stats": {
+        "pvp":{
+            "kills": "Kills",
+            "deaths": "Deaths",
+            "headshots": "Headshots",
+            "bullets-hits": "Bullets hit",
+            "bullets-fired": "Bullets fired",
+            "bullets-hit-percent": "Bullets hit %",
+            "headshot-percent": "Headshot %"
+        },
+        "kills":{
+            "scientists": "Scientists",
+            "boars": "Boars",
+            "bears": "Bears",
+            "wolfs": "Wolfs",
+            "chickens": "Chikens",
+            "deers": "Deers",
+            "horses": "Horses"
+        },
+        "bow-hits":{
+            "shotsfired": "Shots fired",
+            "players": "Players",
+            "buildings": "Buildings"
+            
+        },
+        "exposure":{
+            "cold": "Cold",
+            "heat": "Heat",
+            "comfort": "Comfort",
+            "radiation": "Radiation"
+        },
+        "gathered":{
+            "wood": "Wood",
+            "stone": "Stone",
+            "metal": "Metal",
+            "scrap": "Scrap",
+            "cloth": "Cloth",
+            "leather": "Leather",
+            "low-grade": "Low Grade"
+        },
+        "others": {
+            "voicechat": "Voicechat Time",
+            "barrels": "Barrels destroyed",
+            "rockets": "Rockets fired",
+            "inventory": "Inventory opened",
+            "map": "Map opened",
+            "wounded": "Wounded",
+            "blueprints": "Blueprints learned",
+            "notfound": "User not found"
+        },
+        "titles":{
+            "bow-hits": "Bow Hits",
+            "shotgun-hits": "Shotgun-hits",
+            "gathered": "Gathered",
+            "others": "Others",
+            "exposure": "Exposure to (Hours)",
+            "hours": "Hours"
+        }
+    },
+    "index":{
+        "decay-title": "Decay Calculator",
+        "decay-info": "Calculate the remaining time of a construction in decay and loot it first",
+        "raid-title": "Raid Table",
+        "raid-info": "Check how much you need to raid players and optimize your resources",
+        "stats-title": "Statistics",
+        "stats-info": "Comprueba tus estadisticas en servidores oficiales",
+        "cameras-title": "Cameras",
+        "cameras-info": "Get the CCTV camera codes to use it on most monuments in a computer station",
+        "monuments-title": "Monuments Puzzles",
+        "monuments-info": "Learn how to get monuments keycards Green, Blue, Red and get loot",
+        "diesel-title": "Diesel Location",
+        "diesel-info": "Find diesel barrels to obtain resources and use it on excavator and quarrys",
+        "genetics-title": "Genetics",
+        "genetics-info": "Create the best genetics for your garden plants, get the perfect genetic"
+    },
+    "input":{
+        "search": "Search for a player (Steam ID / Steam Profile Link / Custom Steam URL)",
+        "ruined": "See how much you have ruined your life"
     }
 
     

@@ -34,13 +34,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
+      <Helmet></Helmet>
     </>
   );
 };

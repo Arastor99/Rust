@@ -146,22 +146,11 @@ export const Tabla = () => {
 
   return (
     <>
-      <Helmet>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8479674626279690"
-          crossorigin="anonymous"
-        ></script>
-      </Helmet>
-      <div
-        style={{
-          height: "90vh",
-          backgroundSize: "cover",
-        }}
-        className="Roboto-bold bg-[#0c0d0d] text-white"
-      >
-        <div className="pt-24"></div>
-        <div className=" opacity-90 max-w-lg mx-auto bg-[#232529] p-8 rounded-xl ">
+      <Navbar />
+      <Helmet></Helmet>
+      <div className="min-h-screen bg-[#0c0d0d] text-white flex flex-col justify-start items-center">
+        <div className="pt-32"></div>
+        <div className="opacity-90 max-w-lg mx-auto bg-[#232529] p-8 rounded-xl">
           <img src={logo} alt="" />
           <h1 className="text-4xl font-medium font-face-r text-center pb-8">
             {t("messages.title")}
