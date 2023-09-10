@@ -19,6 +19,7 @@ import { Exposure } from "./stats/Exposure";
 import { Gathered } from "./stats/Gathered";
 import { Other } from "./stats/Other";
 import { StatsError } from "./stats/StatsError";
+import { Header } from "./Header";
 
 export const Stats = () => {
   const { user: paramUser } = useParams();
@@ -41,6 +42,7 @@ export const Stats = () => {
 
   return (
     <>
+      <Header />
       <Navbar />
 
       <div className="bg-[#2B2F38] text-white min-h-screen mt-16">

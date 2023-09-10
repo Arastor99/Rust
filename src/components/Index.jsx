@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import "../../styles/design.css";
 import { useTranslation } from "react-i18next";
+import { Header } from "./Header";
 //images
 
 import bgraid from "../../public/static/resources/index/raidindex.png";
@@ -34,6 +35,7 @@ export const Index = () => {
 
   return (
     <>
+      <Header />
       <Navbar />
       <div className="bg-gray-700 min-h-screen relative" style={cardStyle}>
         {/* Contenedor principal */}

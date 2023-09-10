@@ -21,11 +21,12 @@ import YouTube from "react-youtube";
 import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import { Monument } from "./Monument";
-
+import { Header } from "./Header";
 export const Monuments = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
+      <Header />
       <Navbar />
       <div className="bg-[#0C0D0D] text-white Roboto">
         <header className="bg-[#0C0D0D] py-4">

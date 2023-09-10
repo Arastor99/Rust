@@ -1,9 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import { Header } from "./Header";
 export const Cameras = () => {
   return (
     <>
+      <Header />
       <Navbar />
       <div className="flex justify-center bg-[#0C0D0D] Roboto pt-32">
         <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl">

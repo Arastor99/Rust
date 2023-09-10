@@ -2,10 +2,12 @@ import React from "react";
 import Navbar from "./Navbar";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import { Header } from "./Header";
 export const Privacy = () => {
   const { t, i18n } = useTranslation();
   return (
     <>
+      <Header />
       <Helmet>
         <link rel="canonical" href="https://rust-aio.com" />
       </Helmet>

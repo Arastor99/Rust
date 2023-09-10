@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSelect from "./LanguageSelect";
 import { Helmet } from "react-helmet";
 import { secondsToHHMMSS } from "../functions/decimalToString";
-
+import { Header } from "./Header";
 //images
 import image from "../../public/static/resources/bg.jpg";
 import wood from "/static/resources/wood.png";
@@ -146,6 +146,7 @@ export const Tabla = () => {
 
   return (
     <>
+      <Header />
       <Navbar />
       <Helmet></Helmet>
       <div className="min-h-screen bg-[#0c0d0d] text-white flex flex-col justify-start items-center">
