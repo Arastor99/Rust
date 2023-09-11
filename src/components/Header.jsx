@@ -2,21 +2,20 @@ import React, { useEffect } from "react";
 
 export function Header() {
   useEffect(() => {
-    var _paq = (window._paq = window._paq || []);
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
-    (function () {
-      var u = "https://rustaio.matomo.cloud/";
-      _paq.push(["setTrackerUrl", u + "matomo.php"]);
-      _paq.push(["setSiteId", "1"]);
-      var d = document,
-        g = d.createElement("script"),
-        s = d.getElementsByTagName("script")[0];
-      g.async = true;
-      g.src = "//cdn.matomo.cloud/rustaio.matomo.cloud/matomo.js";
-      s.parentNode.insertBefore(g, s);
-    })();
+
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '64fed1631fd0971b5c2913d3');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://d2fuc4clr7gvcn.cloudfront.net/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+
   }, []);
 
   return <header></header>;
