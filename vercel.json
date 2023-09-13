@@ -5,7 +5,12 @@
     { "src": "/Privacy", "dest": "/" },
     { "src": "/monuments", "dest": "/" },
     { "src": "/diesel", "dest": "/" },
-    { "src": "/testingindex", "dest": "/" }
+    { "src": "/decay", "dest": "/" },
+    { "src": "/statistics", "dest": "/" },
+    { "src": "/breeder", "dest": "/" },
+    { "src": "/cameras", "dest": "/" },
+    { "src": "/raidtable", "dest": "/" }
+    
     
   ]
 }
