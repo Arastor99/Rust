@@ -5,8 +5,6 @@
   "type": "commonjs",
  
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
     "build": "vite build",
     "dev": "vite serve",
     "preview": "vite preview"
