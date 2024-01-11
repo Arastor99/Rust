@@ -72,13 +72,7 @@ const Navbar = () => {
                 >
                   {t("navbar.decay")}
                 </HashLink>
-                <HashLink
-                  smooth
-                  to="/breeder"
-                  className="text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium"
-                >
-                  {t("navbar.genetic")}
-                </HashLink>
+
                 <HashLink
                   smooth
                   to="/cameras"
@@ -192,13 +186,9 @@ const Navbar = () => {
                 >
                   {t("navbar.raid")}
                 </HashLink>
-                <HashLink
-                  smooth
-                  to="/breeder"
-                  className="block text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium"
-                >
+
                   {t("navbar.genetic")}
-                </HashLink>
+
                 <HashLink
                   smooth
                   to="/cameras"

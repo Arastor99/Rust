@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 import { Tabla } from "../components/Tabla";
 import { Raid } from "../components/Raid";
-import { Breeder } from "../components/gens/Breeder";
+
 import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
 import gif from "../../public/static/resources/melee/gif.gif";
