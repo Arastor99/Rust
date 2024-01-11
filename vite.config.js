@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export default defineConfig({
+  base: "/Rust",
   plugins: [
     react(),
     VitePluginRadar({
