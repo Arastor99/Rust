@@ -16,7 +16,7 @@ import { Cameras } from "./Cameras";
 export const Rutas = () => {
   return (
     <Routes>
-      <Route path="/" element={<Index />} />
+      <Route path="/Rust" element={<Index />} />
       <Route path="/info" element={<Info />}></Route>
       <Route path="/decay" element={<Tabla />}></Route>
       <Route path="/raidtable" element={<Raid />}></Route>
