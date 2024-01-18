@@ -136,13 +136,7 @@ const Navbar = () => {
                 lang={lang}
                 i18n={i18n}
               />
-              <div className="text-gray-300 text-xs font-sans pl-12 font-semibold">
-                <ul>
-                  <li className="hover:text-white">
-                    <a href="/privacy">{t("navbar.privacy")}</a>
-                  </li>
-                </ul>
-              </div>
+              
 
               {/* Botón para desplegar el menú en dispositivos móviles */}
               <button
