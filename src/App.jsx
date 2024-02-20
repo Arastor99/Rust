@@ -6,7 +6,6 @@ import "./fonts/Roboto-Black.ttf";
 import "./fonts/Roboto-Bold.ttf";
 
 import { Tabla } from "./components/Tabla";
-import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
 import { inject } from "@vercel/analytics";
 import i18next from "i18next";
@@ -52,7 +51,6 @@ function App() {
           </BrowserRouter>
         </UserContext.Provider>
       </I18nextProvider>
-      <Analytics mode={"production"} />
     </>
   );
 }

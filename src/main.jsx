@@ -1,9 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Tabla } from "./components/Tabla";
-import { Analytics } from "@vercel/analytics/react";
 import "./index.css";
-import { inject } from "@vercel/analytics";
 import i18next from "i18next";
 import { I18nextProvider } from "react-i18next";
 import { BrowserRouter } from "react-router-dom";
