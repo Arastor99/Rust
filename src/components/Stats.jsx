@@ -21,7 +21,7 @@ import { Other } from "./stats/Other";
 import { StatsError } from "./stats/StatsError";
 import { Header } from "./Header";
 
-export const Stats = () => {
+export const  Stats = () => {
   const { user: paramUser } = useParams();
   const { isPrivate, stats, generalStats, hourStats, isError, isLoading } =
     useFetchStats(paramUser);

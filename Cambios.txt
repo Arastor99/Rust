@@ -1,0 +1,29 @@
+Cosas por hacer.
+
+
+
+--------POR HACER----------
+
+
+
+
+
+6- tabla de raideo añadir molotov
+7- tabla de raideo añadir soft side
+
+
+---IMPORTANTE ANTES DE SUBIR-----
+
+10- controlar perfiles privados estadisticas
+4- navbar modo movil añadir las opciones que faltan
+11- SearchInput: en la pagina donde muestra estadisticas hay que hacer un refresco o no funciona ya que la redireccion es la propia pagina.
+Recordar: eliminar los no-cors antes de subir de las url de las peticiones a la api.
+
+-------TERMINADO----------
+8- Controlar los 3 tipos de datos de las estadisticas 
+1- Fotos del index
+2- Fondo del index
+3- traducciones en index y estadisticas
+5- tabla de raideo quitar fondo blanco
+9- Controlar errores de estadisticas
+12- Ocultar la api key en .env

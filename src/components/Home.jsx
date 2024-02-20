@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 
 import { Tabla } from "../components/Tabla";
 import { Raid } from "../components/Raid";
-import { Breeder } from "../components/gens/Breeder";
 import { Helmet } from "react-helmet";
 import { Cameras } from "../components/Cameras";
 import gif from "../../public/static/resources/melee/gif.gif";
@@ -14,7 +13,7 @@ export const Home = () => {
   return (
     <>
       <Helmet>
-        <meta name="Index" content="Index of rust-aio" />
+        <meta name="Index" content="Index of Rust Calculator" />
       </Helmet>
       <Navbar />
       <div className="flex flex-col pt-24 bg-[#0c0d0d] md:flex-row overflow-x-hidden">
