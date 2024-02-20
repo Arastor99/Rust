@@ -36,7 +36,3 @@ Welcome to Rust Calculator, A tool to enhance your Rust gaming experience. This 
 ## Contributing
 
 Your contributions are welcome! If you have ideas for new tools or improvements for existing ones, feel free to open an issue or send a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
