@@ -61,7 +61,7 @@ export const getPlayerStats = async (steamId) => {
 };
 
 export const getHoursPlayed = async (steamId) => {
-  const url = `https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${API_KEY}&steamid=${steamId}&include_appinfo=1`;
+  const url = `https://corsproxy.io/?https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/?key=${API_KEY}&steamid=${steamId}&include_appinfo=1`;
 
   try {
     const response = await fetch(url, {
