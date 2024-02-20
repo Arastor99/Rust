@@ -17,21 +17,21 @@ Welcome to Rust Calculator, A tool to enhance your Rust gaming experience. This 
 ## Screenshots
 
 ### Index
-![Index](https://imgur.com/LkG6ZSd)
+![Index](https://i.imgur.com/LkG6ZSd.png)
 ### Decay Calculator
-![Decay Calculator](https://imgur.com/Vkzzz3X)
+![Decay Calculator](https://i.imgur.com/Vkzzz3X.png)
 
 ### Raid Tables
-![Raid Tables](https://imgur.com/qZFy2Rh)
+![Raid Tables](https://i.imgur.com/qZFy2Rh.png)
 
 ### Strategic Cameras
-![Strategic Cameras](https://your-screenshot-url3)
+![Strategic Cameras](https://i.imgur.com/yxU7bfH.png)
 
 ### Statistics and Data
-![Statistics and Data](https://imgur.com/a33UKwg)
+![Statistics and Data](https://i.imgur.com/a33UKwg.png)
 
 ### Monuments
-![Monuments](https://imgur.com/1PQ7Gck)
+![Monuments](https://i.imgur.com/1PQ7Gck.png)
 
 ## Contributing
 
