@@ -2,12 +2,11 @@
 const API_KEY = import.meta.env.VITE_STEAM_API_KEY;
 
 export const getSteamId = async (vanityName) => {
-  const url = `https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=${API_KEY}&vanityurl=${vanityName}`;
+  const url = `https://corsproxy.io/?https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=${API_KEY}&vanityurl=${vanityName}`;
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: new Headers({ "Content-type": "application/json" }),
-      mode: "cors"
+      headers: new Headers({ "Content-type": "application/json" })
     });
 
     if (!response.ok) {

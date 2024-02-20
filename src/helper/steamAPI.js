@@ -6,8 +6,7 @@ export const getPlayerGeneral = async (steamId) => {
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: new Headers({ "Content-type": "application/json" }),
-      mode: "cors"
+      headers: new Headers({ "Content-type": "application/json" })
     });
     const data = await response.json();
 
@@ -34,13 +33,12 @@ export const getPlayerGeneral = async (steamId) => {
 // Función para obtener las estadísticas de un jugador en Rust
 
 export const getPlayerStats = async (steamId) => {
-  const url = `https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?appid=252490&key=${API_KEY}&steamid=${steamId}`;
+  const url = `https://corsproxy.io/?https://corsproxy.io/?https://api.steampowered.com/ISteamUserStats/GetUserStatsForGame/v2/?appid=252490&key=${API_KEY}&steamid=${steamId}`;
 
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: new Headers({ "Content-type": "application/json" }),
-      mode: "cors"
+      headers: new Headers({ "Content-type": "application/json" })
     });
     const data = await response.json();
 
@@ -68,8 +66,7 @@ export const getHoursPlayed = async (steamId) => {
   try {
     const response = await fetch(url, {
       method: "GET",
-      headers: new Headers({ "Content-type": "application/json" }),
-      mode: "cors"
+      headers: new Headers({ "Content-type": "application/json" })
     });
     const data = await response.json();
 
