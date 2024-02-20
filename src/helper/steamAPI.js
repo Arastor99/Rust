@@ -7,6 +7,7 @@ export const getPlayerGeneral = async (steamId) => {
     const response = await fetch(url, {
       method: "GET",
       headers: new Headers({ "Content-type": "application/json" }),
+      mode: "cors"
     });
     const data = await response.json();
 
@@ -39,6 +40,7 @@ export const getPlayerStats = async (steamId) => {
     const response = await fetch(url, {
       method: "GET",
       headers: new Headers({ "Content-type": "application/json" }),
+      mode: "cors"
     });
     const data = await response.json();
 
@@ -67,6 +69,7 @@ export const getHoursPlayed = async (steamId) => {
     const response = await fetch(url, {
       method: "GET",
       headers: new Headers({ "Content-type": "application/json" }),
+      mode: "cors"
     });
     const data = await response.json();
 
