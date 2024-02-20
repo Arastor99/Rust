@@ -1,6 +1,6 @@
 # Rust Calculator
 
-![Rust Calculator Banner](https://imgur.com/xWbtPme)
+![Rust Calculator Banner](https://i.imgur.com/xWbtPme.png)
 
 ## Description
 
