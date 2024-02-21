@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { Tabla } from "./Tabla";
 import { Raid } from "./Raid";
 import { Monuments } from "./Monuments";
@@ -10,6 +10,21 @@ import { Statistics } from "./Statistics";
 import { Cameras } from "./Cameras";
 
 export const Rutas = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-2NQH205YKS";
+    script.async = true;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2NQH205YKS');
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<Index />} />
