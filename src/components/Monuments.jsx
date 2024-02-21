@@ -17,7 +17,6 @@ import blue from "../../public/static/resources/blue.png";
 import red from "../../public/static/resources/red.png";
 import fuse from "../../public/static/resources/fuse.png";
 import Navbar from "./Navbar";
-import YouTube from "react-youtube";
 import { HashLink } from "react-router-hash-link";
 import { useTranslation } from "react-i18next";
 import { Monument } from "./Monument";

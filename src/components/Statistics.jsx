@@ -1,13 +1,10 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
 import Navbar from "./Navbar";
-import { useContext } from "react";
-import { UserContext } from "../App";
-import { useNavigate } from "react-router-dom";
 import { InputSearch } from "./stats/InputSearch";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Header } from "./Header";
+
 export const Statistics = () => {
   const { message } = useParams();
   const { t, i18n } = useTranslation();

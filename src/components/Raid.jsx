@@ -4,7 +4,6 @@ import { content, raidExplosive } from "../data/raidtable";
 import fuelimg from "../../public/static/resources/lowgradefuel.png";
 import sulfurimg from "../../public/static/resources/sulfur.png";
 import { secondsToHHMMSS } from "../functions/decimalToString";
-import { Helmet } from "react-helmet";
 import { Header } from "./Header";
 
 export const Raid = () => {

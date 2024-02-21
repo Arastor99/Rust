@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./Navbar";
 import { useFetchStats } from "../hook/useFetchsteamAPI";
 import { Loading } from "./stats/Loading";
-import { FaSearch } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../App";

@@ -5,7 +5,6 @@ import en from "/static/resources/uk.png";
 import es from "/static/resources/spain.png";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import { Link, Route } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Header } from "./Header";
 
@@ -135,14 +134,6 @@ const Navbar = () => {
                 lang={lang}
                 i18n={i18n}
               />
-              <div className="text-gray-300 text-xs font-sans pl-12 font-semibold">
-                <ul>
-                  <li className="hover:text-white">
-                    <a href="/privacy">{t("navbar.privacy")}</a>
-                  </li>
-                </ul>
-              </div>
-
               {/* Botón para desplegar el menú en dispositivos móviles */}
               <button
                 className="md:hidden text-gray-300 hover:bg-gray-800 px-3 py-2 rounded-md text-sm font-medium ml-4"

@@ -1,14 +1,12 @@
 import { useRef, useState } from "react";
 import Navbar from "./Navbar";
-import { decimal2HHMISS } from "../functions/decimalToDate";
 import Select from "./Select";
 import { useTranslation } from "react-i18next";
-import LanguageSelect from "./LanguageSelect";
 import { Helmet } from "react-helmet";
 import { secondsToHHMMSS } from "../functions/decimalToString";
 import { Header } from "./Header";
 //images
-import image from "../../public/static/resources/bg.jpg";
+
 import wood from "/static/resources/wood.png";
 import stone from "/static/resources/stone.png";
 import metal from "/static/resources/metal.png";
