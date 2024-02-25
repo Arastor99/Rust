@@ -3,18 +3,18 @@ import Navbar from "./Navbar";
 import "../../styles/design.css";
 import { useTranslation } from "react-i18next";
 import { Header } from "./Header";
+
 //images
-
-import bgraid from "../../public/static/resources/index/raidindex.png";
-import bgstats from "../../public/static/resources/index/statsindex.png";
-import bgcameras from "../../public/static/resources/index/camerasindex.png";
-import bgmonuments from "../../public/static/resources/index/bgmonuments.png";
-import bgdiesel from "../../public/static/resources/index/dieselindex.png";
-import bggenetic from "../../public/static/resources/index/bggenetic.png";
-import bgdecay from "../../public/static/resources/index/decayindex.png";
+import bgraid from "../../public/static/resources/index/raidindex.webp";
+import bgstats from "../../public/static/resources/index/statsindex.webp";
+import bgcameras from "../../public/static/resources/index/camerasindex.webp";
+import bgmonuments from "../../public/static/resources/index/bgmonuments.webp";
+import bgdiesel from "../../public/static/resources/index/dieselindex.webp";
+import bggenetic from "../../public/static/resources/index/bggenetic.webp";
+import bgdecay from "../../public/static/resources/index/decayindex.webp";
 import bg from "../../public/static/resources/bgtest.png";
-//videos
 
+//videos
 import vraid from "../../public/static/resources/index/raid.mp4";
 import vdecay from "../../public/static/resources/index/vdecay.mp4";
 import vcamera from "../../public/static/resources/index/camera.mp4";
@@ -217,7 +217,6 @@ export const Index = () => {
             </HashLink>
 
             {/* Tarjeta 7 */}
-            <HashLink to="/breeder">
               <div>
                 <div
                   className="card relative"
@@ -243,7 +242,6 @@ export const Index = () => {
                   </div>
                 </div>
               </div>
-            </HashLink>
           </div>
         </div>
       </div>
